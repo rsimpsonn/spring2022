@@ -1,0 +1,34 @@
+[
+    {
+	"Assignment": {"name": "Project 1", "link": "https://hackmd.io/kfUwM3Z_TMayrPfbFKIsUw?view"},
+	"Out": "Tues, 10/6/21",
+	"In": "Tues, 10/19/21 @ 9pm ET",
+	"Support Docs": [],
+	"Forms": [],
+	"Display": true
+    },
+    {
+	"Assignment": {"name": "Project 2", "link": "https://hackmd.io/@cs111/B1Dr_8KBH"},
+	"Out": "Fri, 10/22/21",
+	"In": "Tues, 11/9/21 @ 9pm ET",
+	"Support Docs": {"name": "Project 2 Partner Form", "link": "https://forms.gle/cTA8xB3TvvnqrGmk6"},
+	"Forms": [],
+	"Display": true
+    },
+    {
+	"Assignment": {"name": "Mini Project", "link":"https://hackmd.io/@cs111/project-mini-f21"},
+	"Out": "Tues, 11/30/21",
+	"In": "Fri, 12/10/21 @9pm ET",
+	"Support Docs": {"name": "Conceptual Questions (gradescope)", "link":"https://www.gradescope.com/courses/302007/assignments/1690789"},
+	"Forms": [],
+	"Display": true
+    }
+    {
+	"Assignment": {"name": "Project 3", "link": null},
+	"Out": "Fri, 10/27/20",
+	"In": "Fri, 11/13/20 @ 9pm ET",
+	"Support Docs": [],
+	"Forms": [],
+	"Display": false
+    }
+]

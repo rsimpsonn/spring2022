@@ -1,0 +1,199 @@
+[{
+                "Lab": {
+                        "name": "Lab 1",
+                        "link": "https://hackmd.io/@cs111/lab01-fall2021"
+                },
+                "Week": "1",
+                "Additional Materials": [{
+                                "name": "Lab 1 Presentation",
+                                "link": "https://docs.google.com/presentation/d/1PNCDO8wIECNkGf4J_zvE-NhvqoUrshiK/edit?usp=sharing&ouid=112980685872300506532&rtpof=true&sd=true"
+                        },
+                        {
+                                "name": "Lab 1 Solution",
+                                "link": "https://drive.google.com/file/d/1O91atAg81HVB2yp4LlvUbhsErgppbWbj/view?usp=sharing"
+                        }
+                ],
+                "Display": true
+        },
+        {
+                "Lab": {
+                        "name": "Lab 2",
+                        "link": "https://hackmd.io/@cs111/lab02-fall2021"
+                },
+                "Week": "2",
+            "Additional Materials": [
+                {
+                    "name": "Lab 2 Presentation",
+                    "link": "https://docs.google.com/presentation/d/1wO2BK_7jN1qX2zoeEyrZgRwXtjAAFmLV"}
+                    {
+                      "name": "Lab 2 Solution",
+                      "link": "https://drive.google.com/file/d/1xCV4Bs91M_qwYvdQm3u-1WywbS_xs6QA/view?usp=sharing"
+                    }
+            ],
+            "Display": true
+        },
+ {
+     "Lab": {
+         "name": "Lab 3",
+         "link": "https://hackmd.io/@cs111/lab03-fall2021"
+     },
+     "Week": "3",
+     "Additional Materials": [{
+         "name": "Lab 3 Presentation",
+         "link": "https://docs.google.com/file/d/1iKiUqhhOarHZisbZf316rK3BWmd2eFYK/edit?usp=docslist_api&filetype=mspresentation"
+     }
+     {
+       "name": "Lab 3 Solution",
+       "link": "https://drive.google.com/file/d/1-m-oMPgF2QtN7G7vxE7Cufp36K4VSKTP/view?usp=sharing"
+     }
+			     ],
+     "Display": true
+ },
+ {
+     "Lab": {
+         "name": "Lab 4",
+         "link": "https://hackmd.io/@cs111/lab04-fall2021"
+     },
+     "Week": "4",
+     "Additional Materials": [{
+         "name": "Lab 4 Presentation",
+         "link": "https://docs.google.com/presentation/d/1ss4_FVOTD_8OcOMq9Esags12JC1QIsC9/edit?usp=sharing&ouid=112980685872300506532&rtpof=true&sd=true"
+     },
+   {
+     "name": "Lab 4 Solution",
+     "link": "https://drive.google.com/file/d/1kly1SpUleSGvkBml6Pn85LNk8iRVdbGZ/view?usp=sharing"
+     }],
+     "Display": true
+ },
+ {
+                "Lab": {
+                        "name": "Lab 5",
+                        "link": "https://hackmd.io/@cs111/lab05-fall2021"
+                },
+                "Week": "5",
+                "Additional Materials": [{
+                                "name": "Lab 5 Presentation",
+                                "link": "https://docs.google.com/presentation/d/1wOr1ZE2Kc7L06CVzFyTvq_QXxGzEdieY/edit?usp=sharing&ouid=112980685872300506532&rtpof=true&sd=true"
+                        }
+                ],
+                "Display": true
+        },
+        {
+                "Lab": {
+                        "name": "Lab 6",
+                        "link": "https://hackmd.io/@cs111/lab6"
+                },
+                "Week": "6",
+                "Additional Materials": [{
+                                "name": "Lab 6 Presentation",
+                                "link": "https://docs.google.com/presentation/d/1Eufu6g7KiAhVqe75vByVfAC277W1VUeP_B9lKHrq25c/edit?usp=sharing"
+                        },
+                        {
+                                "name": "Lab 6 Solution",
+                                "link": null
+                        }
+                ],
+                "Display": false
+        },
+    {
+                "Lab": {
+                        "name": "Lab 7",
+                        "link": "https://hackmd.io/@cs111/lab7"
+                },
+                "Week": "7",
+                "Additional Materials": [{
+                                "name": "Lab 7 Presentation",
+                                "link": "https://docs.google.com/presentation/d/1_RftEZwt3qQL6cQb5YFQG_glWt8PMtBWcmbRrAXimeU/edit?usp=sharing"
+                        },
+                        {
+                                "name": "Lab 7 Solution",
+                                "link": null
+                        }
+                ],
+                "Display": false
+        },
+        {
+                "Lab": {
+                        "name": "Lab 8",
+                        "link": null
+                },
+                "Week": "8",
+                "Additional Materials": [
+                        {
+                                "name": "Lab 8 Handout",
+                                "link": "https://hackmd.io/@cs111/lab8"
+                        },
+                        {
+                                "name": "Lab 8 (Advanced) Handout",
+                                "link": "https://hackmd.io/@cs111/lab8-adv"
+                        },
+                        {
+                                "name": "Lab 8 Presentation",
+                                "link": "https://docs.google.com/presentation/d/13Dm1PzzOkivTVkyuYVeSJzVwY-PjhOhdRkWefWtY5yM/edit?usp=sharing"
+                        },
+                        {
+                                "name": "Lab 8 Solution",
+                                "link": null
+                        },
+                        {
+                                "name": "Lab 8 (Advanced) Solution",
+                                "link": null
+                        }
+                ],
+                "Display": false
+        },
+        {
+                "Lab": {
+                        "name": "Lab 9",
+                        "link": "https://hackmd.io/@cs111/lab9"
+                },
+                "Week": "9",
+                "Additional Materials": [
+                        {
+                                "name": "Lab 9 Presentation",
+                                "link": "https://docs.google.com/presentation/d/1a6eQPbNj64WC0yAGfdWsFGexBYxNj0FZhF1Cwd_PefY/edit?usp=sharing"
+                        },
+                        {
+                                "name": "Lab 9 Solution",
+                                "link": null
+                        }
+                ],
+                "Display": false
+        },
+                {
+                "Lab": {
+                        "name": "Lab 10",
+                        "link": "https://hackmd.io/@cs111/lab10"
+                },
+                "Week": "10",
+                "Additional Materials": [
+                        {
+                                "name": "Lab 10 Presentation",
+                                "link": "https://docs.google.com/presentation/d/1HEFXyAHsxxGcuHUHjUFdUnPxcTCGis6WTqfkEiZSpr8/edit?usp=sharing"
+                        },
+                        {
+                                "name": "Lab 10 Solution",
+                                "link": null
+                        }
+                ],
+                "Display": false
+        },
+                {
+                "Lab": {
+                        "name": "Lab 11",
+                        "link": "https://hackmd.io/@cs111/lab11"
+                },
+                "Week": "11",
+                "Additional Materials": [
+                        {
+                                "name": "Lab 11 Presentation",
+                                "link": "https://docs.google.com/presentation/d/1HNcoa2Z2q8oDGLuhBJAx2c0vgM72Rvy-BtmDaaxlV5g/edit?usp=sharing"
+                        },
+                        {
+                                "name": "Lab 11 Solution",
+                                "link": null
+                        }
+                ],
+                "Display": false
+        }
+]

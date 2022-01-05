@@ -1,0 +1,51 @@
+.itemtight li p {
+    margin: 0;
+    padding: 3px;
+}
+
+.emphbox {
+    margin-left: 20pt;
+    margin-right: 20pt;
+    background-color: lightgray;
+    padding: 3px
+}
+
+body {
+    font-family: 'EB Garamond', serif;
+}
+
+.maincolumn {
+    width: 50em;
+}
+
+.activity {
+    background: cornsilk;
+    border-style: solid;
+    border-width: 1px;
+    margin: 10px;
+}
+
+.activityAnswer {
+    background: lightBlue;
+    border-style: solid;
+    border-width: 1px;
+    margin: 10px;
+}
+
+.programmingTip {
+    background: lightGreen;
+}
+
+.csTip {
+    background: lightPink;
+}
+
+.rednote {
+    color: red;
+    font-weight: bold;
+}
+
+.gridtable td {
+  border: 1px solid black;
+  padding: 10px;
+}

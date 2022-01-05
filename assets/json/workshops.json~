@@ -1,0 +1,86 @@
+[
+ {
+   "Display": true,
+   "Date": "Dec 5",
+   "Topic": "Workshop 12: Final Exam Review",
+   "Presentation": {"name": "slides", "link": "https://docs.google.com/presentation/d/1x2EMuXD4046Qk-P44FHZR3j2ESxQWQMtaTiY9Ti6vu4/edit?usp=sharing"},
+   "Recording": {"name": "video", "link": "https://cs.brown.edu/courses/csci0111/fall2020/workshops/CS0111 Dec 5 Workshop.mp4"}
+ },
+ {
+   "Display": true,
+   "Date": "Nov 21",
+   "Topic": "Workshop 11: Dictionaries and Dataclasses",
+   "Presentation": {"name": "slides", "link": "https://docs.google.com/presentation/d/11UEfd2Is7FPMFEQkZTqogn0WOLD3nKIPdXeNhiPj4e0/edit?usp=sharing"},
+   "Recording": []
+ },
+ {
+   "Display": true,
+   "Date": "Nov 16",
+   "Topic": "Workshop 10: Error Messages, Mutation, and Testing",
+   "Presentation": {"name": "slides", "link": "https://docs.google.com/presentation/d/1RXNedV_wUFT44yr-KxEP-snfIIoDqMegBr6qvR_L1Sk/edit?usp=sharing"},
+   "Recording": {"name": "video", "link": "https://cs.brown.edu/courses/csci0111/fall2020/workshops/CS0111 Nov 16 Workshop.mp4"}
+ },
+ {
+   "Display": true,
+   "Date": "Nov 9",
+   "Topic": "Workshop 9: Intro to Python and For Loops",
+   "Presentation": {"name": "slides", "link": "https://drive.google.com/file/d/1vo5HVyvpYrULtF9A_N5dwv9rPUmNFQmd/view?usp=sharing"},
+   "Recording": {"name": "video", "link": "https://cs.brown.edu/courses/csci0111/fall2020/workshops/CS0111 Nov 9 Workshop.mp4"}
+ },
+ {
+   "Display": true,
+   "Date": "Nov 2",
+   "Topic": "Workshop 8: Reactors and Datatypes",
+   "Presentation": {"name": "slides", "link": "https://docs.google.com/presentation/d/184tOneH4z81fsF6xZFtwHlAAk2XX_k7S4cx2c37gDS8/edit?usp=sharing"},
+   "Recording": {"name": "video", "link": "https://cs.brown.edu/courses/csci0111/fall2020/workshops/CS0111 Nov 2 Workshop.mp4"}
+ },
+ {
+   "Display": true,
+   "Date": "Oct 24",
+   "Topic": "Workshop 7: Midterm Prep",
+   "Presentation": {"name": "slides", "link": "https://docs.google.com/presentation/d/1-Z6sjG_sJdaAQbbyiiMrtKXb9YmM4RnQbP39WHc19CQ/edit?usp=sharing"},
+   "Recording": {"name": "video", "link": "https://cs.brown.edu/courses/csci0111/fall2020/workshops/CS0111 Oct 24 Workshop.mp4"} 
+ },
+ {
+   "Display": true,
+   "Date": "Oct 17",
+   "Topic": "Workshop 6: Lists and Recursion",
+   "Presentation": {"name": "slides", "link": "https://docs.google.com/presentation/d/1asa_f6xlqQkkUs40tHwR_9JQSOoaosUTukTZvOgHe4Q/edit?usp=sharing"},
+   "Recording": {"name": "video", "link": "https://cs.brown.edu/courses/csci0111/fall2020/workshops/CS0111 Oct 17 Workshop.mp4"}
+ },
+ {
+   "Display":true,
+   "Date": "Oct 10",
+   "Topic": "Workshop 5: Lambdas and Task Plans",
+   "Presentation": {"name": "slides", "link": "https://docs.google.com/presentation/d/1oBTbfObbsrr6_GdkD12dPSp-1Yk5rackUn21qbDDhGI/edit?usp=sharing"},
+   "Recording": {"name": "video", "link": "https://cs.brown.edu/courses/csci0111/fall2020/workshops/CS0111 Oct 10 Workshop.mp4"}
+ },
+ {
+   "Display": true,
+   "Date": "Oct 3",
+   "Topic": "Workshop 4: Table Operations",
+   "Presentation": {"name": "slides", "link": "https://docs.google.com/presentation/d/1xSPyYj8Yk53_7MzHuN-MrKkEJ67mYg481foLGEaeBIM/edit?usp=sharing"},
+   "Recording": {"name": "video", "link": "https://cs.brown.edu/courses/csci0111/fall2020/workshops/CS0111 Oct 3 Workshop.mp4"}
+ },
+ {
+  "Display": true,
+  "Date": "Sept 26",
+  "Topic": "Workshop 3: Examples and Directory",
+  "Presentation": {"name": "slides", "link": "https://docs.google.com/presentation/d/1l_-nUooaPPRYLjVOGMiIopt_odIo3H8uzPzJ2yBq7Xk/edit?usp=sharing"},
+  "Recording": {"name": "video", "link": "https://cs.brown.edu/courses/csci0111/fall2020/workshops/CS0111 Sept 26 Workshop.mp4"}
+ },
+ {
+  "Display": true,
+  "Date": "Sept 19",
+  "Topic": "Workshop 2: Functions and Conditionals",
+  "Presentation": {"name": "slides", "link": "https://docs.google.com/presentation/d/1V5ClLDXYivFcFrJUyNzsOAUm0tMdjeCjte99ZERaNw4/edit?usp=sharing"},
+  "Recording": {"name": "video", "link": "https://cs.brown.edu/courses/csci0111/fall2020/workshops/CS0111 Sept 19 Workshop.mp4"}
+ },
+ {
+   "Display": true,
+   "Date": "Sept 12",
+   "Topic": "Workshop 1: Basic Programs and Expressions",
+   "Presentation": {"name": "slides", "link": "https://docs.google.com/presentation/d/1QqIsynGh4jemuRcvOeKjR8QA0zTpQRtb35QKemQo2EE/edit?usp=sharing"},
+   "Recording": []
+ }
+]

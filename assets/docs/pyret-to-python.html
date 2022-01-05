@@ -1,0 +1,135 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pyret to Python Guide</title>
+  <link rel="stylesheet" href="https://stackedit.io/style.css" />
+</head>
+
+<body class="stackedit">
+  <div class="stackedit__html"><h2 id="pyret-to-python-guide">Pyret to Python Guide</h2>
+<h3 id="comments">Comments</h3>
+<p>Pyret and Python:</p>
+<pre><code># this is a one-line comment in both Pyret and Python
+# Python doesn't have multiline comments so
+# we start each line with a hashtag
+</code></pre>
+<h3 id="functions">Functions</h3>
+<p>Pyret:</p>
+<pre><code>fun f(x :: Number) -&gt; Number:
+	x * x
+end
+
+or
+
+f = lam(x : Number) -&gt; Number: x * x end
+</code></pre>
+<p>Python:</p>
+<pre class=" language-python"><code class="prism  language-python"><span class="token keyword">def</span> <span class="token function">f</span><span class="token punctuation">(</span>x <span class="token punctuation">:</span> <span class="token builtin">float</span><span class="token punctuation">)</span> <span class="token operator">-</span><span class="token operator">&gt;</span> <span class="token builtin">float</span><span class="token punctuation">:</span>
+	<span class="token keyword">return</span> x<span class="token operator">**</span><span class="token number">2</span>
+
+<span class="token operator">or</span>
+
+f <span class="token operator">=</span> <span class="token keyword">lambda</span> x<span class="token punctuation">:</span> x<span class="token operator">**</span><span class="token number">2</span> <span class="token comment"># single-line only</span>
+</code></pre>
+<h3 id="docstrings">Docstrings</h3>
+<p>Pyret:</p>
+<pre><code>fun f(x):
+  doc: ```this is a long docstring, started with three backticks
+	   and ended with three backticks ```
+end
+</code></pre>
+<p>Python:</p>
+<pre class=" language-python"><code class="prism  language-python"><span class="token keyword">def</span> <span class="token function">f</span><span class="token punctuation">(</span>x<span class="token punctuation">)</span><span class="token punctuation">:</span>
+	<span class="token triple-quoted-string string">''' this is a python docstring, it starts with three
+	quotations (' or ") and ends with three quotations, even
+	if it's only one line long! '''</span>
+	<span class="token keyword">return</span> x
+</code></pre>
+<h3 id="if-expressionsstatements">If Expressions/Statements</h3>
+<p>Pyret:</p>
+<pre><code>result =
+  if this and that:
+  	'condition1 true'
+  else:
+  	'condition2 true'
+  end
+</code></pre>
+<p>Python:</p>
+<pre class=" language-python"><code class="prism  language-python"><span class="token keyword">if</span> this <span class="token operator">and</span> that<span class="token punctuation">:</span>
+	result <span class="token operator">=</span> <span class="token string">'condition1 true'</span>
+<span class="token keyword">else</span><span class="token punctuation">:</span>
+	result <span class="token operator">=</span> <span class="token string">'condition2 true'</span>
+</code></pre>
+<h3 id="booleans">Booleans</h3>
+<p>Pyret:<br>
+<code>true</code> and <code>false</code></p>
+<p>Python:<br>
+<code>True</code> and <code>False</code></p>
+<h3 id="lists">Lists</h3>
+<p>Pyret:</p>
+<pre><code>a = [list: 1, 2, 3]
+</code></pre>
+<p>Python:</p>
+<pre class=" language-python"><code class="prism  language-python">a <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">]</span>
+</code></pre>
+<h3 id="imports">Imports</h3>
+<p>Pyret:</p>
+<pre><code>import lists as L
+include tables
+</code></pre>
+<p>Python:</p>
+<pre class=" language-python"><code class="prism  language-python"><span class="token keyword">import</span> numpy <span class="token keyword">as</span> np <span class="token comment"># needs installation on mac</span>
+<span class="token keyword">from</span> datetime <span class="token keyword">import</span> datetime
+<span class="token keyword">import</span> math <span class="token comment"># math.pi for example</span>
+</code></pre>
+<h3 id="example-of-a-simple-recursive-program">Example of a simple recursive program</h3>
+<p>Pyret:</p>
+<pre><code>fun length(lst :: List) -&gt; Number:
+  cases (List) lst:
+    | empty =&gt; 0
+    | link(first, rest) =&gt; 1 + length(rest)
+  end
+end
+</code></pre>
+<p>Python</p>
+<pre class=" language-python"><code class="prism  language-python"><span class="token keyword">def</span> <span class="token function">length</span><span class="token punctuation">(</span>lst <span class="token punctuation">:</span> <span class="token builtin">list</span><span class="token punctuation">)</span> <span class="token operator">-</span><span class="token operator">&gt;</span> <span class="token builtin">int</span><span class="token punctuation">:</span>
+	<span class="token keyword">if</span> lst <span class="token operator">==</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">:</span>
+		<span class="token keyword">return</span> <span class="token number">0</span>
+	<span class="token keyword">else</span><span class="token punctuation">:</span>
+		<span class="token keyword">return</span> <span class="token number">1</span> <span class="token operator">+</span> length<span class="token punctuation">(</span>lst<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">:</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+</code></pre>
+<h3 id="testing">Testing</h3>
+<p>Pyret:</p>
+<pre><code>fun member(lst, to-find):
+  cases (List) to-find:
+    | empty =&gt; false
+    | link(first, rest) =&gt;
+      (first == to-find) or member(rest, to-find)
+  end
+where:
+  member([list: 1, 2, 3], 2) is true
+  member([list: 1, 2, 3], 0) is false
+  member(empty, 0) is false
+end
+</code></pre>
+<p>Python:</p>
+<pre class=" language-python"><code class="prism  language-python"><span class="token keyword">import</span> testlight
+
+<span class="token keyword">def</span> <span class="token function">member</span><span class="token punctuation">(</span>lst<span class="token punctuation">,</span> to_find<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">for</span> element <span class="token keyword">in</span> lst<span class="token punctuation">:</span>
+        <span class="token keyword">if</span> element <span class="token operator">==</span> to_find<span class="token punctuation">:</span>
+            <span class="token keyword">return</span> <span class="token boolean">True</span>
+
+    <span class="token keyword">return</span> <span class="token boolean">False</span>
+
+test<span class="token punctuation">(</span><span class="token string">"is member"</span><span class="token punctuation">,</span> member<span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token boolean">True</span><span class="token punctuation">)</span>
+test<span class="token punctuation">(</span><span class="token string">"is not member"</span><span class="token punctuation">,</span> member<span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token boolean">False</span><span class="token punctuation">)</span>
+test<span class="token punctuation">(</span><span class="token string">"empty list"</span><span class="token punctuation">,</span> member<span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token boolean">False</span><span class="token punctuation">)</span>
+</code></pre>
+</div>
+</body>
+
+</html>

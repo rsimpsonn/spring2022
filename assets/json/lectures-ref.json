@@ -1,0 +1,586 @@
+[
+  {
+    "Date": "Dec 4", 
+    "Display": true, 
+    "Lecture Capture": {
+	"name": "Lecture capture",
+	"link": "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=9d1af4ed-d1f7-46ec-a14f-ab190167e193"
+    }, 
+      "Readings": [],
+    "Summary": [
+      {
+          "link": "",
+        "name": "No notes"
+      }
+    ], 
+    "Topic": "Hashtable design cont., data science overview"
+  }, 
+  {
+    "Date": "Dec 2", 
+    "Display": true, 
+    "Lecture Capture": {
+	"name": "Lecture capture",
+	"link": "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=80589b1c-1472-486c-bff3-ab1701290b8c"
+    }, 
+      "Readings": [],
+    "Summary": [
+      {
+          "link": "lectures/return-print-review.html",
+        "name": "Notes"
+      }
+    ], 
+    "Topic": "Review: print vs. return, hashtable design"
+  }, 
+  {
+    "Date": "Nov 25th", 
+    "Display": true, 
+    "Lecture Capture": {
+	"name": "Lecture capture",
+	"link": "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=597bd2d4-6ab4-4282-91f3-ab10014cc18a"
+    }, 
+      "Readings": [],
+    "Summary": [
+      {
+          "link": "lectures/hashtable-internals.html",
+        "name": "Notes"
+      }
+    ], 
+    "Topic": "Hashtable and list internals"
+  }, 
+  {
+    "Date": "Nov 22nd", 
+    "Display": true, 
+    "Lecture Capture": {
+	"name": "Lecture capture",
+	"link": "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=a7910be0-f00a-40bc-9ee6-ab0d0128f31c"
+    }, 
+      "Readings": [],
+    "Summary": [
+      {
+          "link": "",
+        "name": "No notes"
+      }
+    ], 
+    "Topic": "Data design example, quiz 3"
+  }, 
+  {
+    "Date": "Nov 20th", 
+    "Display": true, 
+    "Lecture Capture": {
+	"name": "Lecture capture",
+	"link": "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=bff7bd6d-f2ab-4009-9b61-ab0b0128ec21"
+    }, 
+      "Readings": [],
+    "Summary": [
+      {
+          "link": "lectures/hashtables.html",
+        "name": "Notes"
+      }
+    ], 
+    "Topic": "Programming with hashtables"
+  }, 
+  {
+    "Date": "Nov 18th", 
+    "Display": true, 
+    "Lecture Capture": {
+	"name": "Lecture capture",
+	"link": "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=6c834809-c16b-449c-ad01-ab090129104a"
+    }, 
+      "Readings": [],
+    "Summary": [
+      {
+          "link": "lectures/circular-refs.html",
+        "name": "Notes"
+      }
+    ], 
+    "Topic": "Memory review, circular references, hashtables intro"
+  }, 
+  {
+    "Date": "Nov 15th", 
+    "Display": true, 
+    "Lecture Capture": {
+	"name": "Lecture capture",
+	"link": "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=770df1ca-14f7-471b-ae9c-ab060128ef3b"
+    }, 
+      "Readings": [],
+    "Summary": [
+      {
+          "link": "lectures/lists-memory.html",
+        "name": "Notes"
+      }
+    ], 
+    "Topic": "Lists and memory"
+  }, 
+  {
+    "Date": "Nov 13th", 
+    "Display": true, 
+    "Lecture Capture": {
+	"name": "Lecture capture",
+	"link": "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=11967558-a35f-49a3-9221-ab04016fd4a2"
+    }, 
+      "Readings": [],
+    "Summary": [
+      {
+          "link": "lectures/more-memory.html",
+        "name": "Notes"
+      }
+    ], 
+    "Topic": "More memory, atomic values"
+  }, 
+  {
+    "Date": "Nov 11th", 
+    "Display": true, 
+    "Lecture Capture": {
+	"name": "Lecture capture",
+	"link": "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=6ca1a564-f490-44e9-a38e-ab020128fc3d"
+    }, 
+      "Readings": [],
+    "Summary": [
+      {
+          "link": "lectures/memory.html",
+        "name": "Notes"
+      }
+    ], 
+    "Topic": "Modifying dataclass instances, equality, introduction to memory"
+  }, 
+  {
+    "Date": "Nov 8th", 
+    "Display": true, 
+    "Lecture Capture": {
+	"name": "Lecture capture",
+	"link": "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=46cd1e31-7e12-4e5c-861a-aaff012929d4"
+    }, 
+      "Readings": [],
+    "Summary": [
+      {
+          "link": "lectures/dataclasses.html",
+        "name": "Notes"
+      }
+    ], 
+    "Topic": "Dataclasses, modifying lists in place"
+  }, 
+  {
+    "Date": "Nov 6th", 
+    "Display": true, 
+    "Lecture Capture": {
+	"name": "Lecture capture",
+	"link": "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=eaac4e93-642b-48d0-9eac-aafd0128e76c"
+    }, 
+      "Readings": [],
+    "Summary": [
+      {
+          "link": "lectures/python-debugging.html",
+        "name": "Notes"
+      }
+    ], 
+    "Topic": "Python: more loops, debugging"
+  }, 
+  {
+    "Date": "Nov 4th", 
+    "Display": true, 
+    "Lecture Capture": {
+	"name": "Lecture capture",
+	"link": "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=4d85e7d8-e46d-42c9-9eb0-aafb0129291f"
+    }, 
+      "Readings": [],
+    "Summary": [
+      {
+          "link": "lectures/more-python.html",
+        "name": "Notes"
+      }
+    ], 
+    "Topic": "Python: testing and loops"
+  }, 
+  {
+    "Date": "Nov 1st", 
+    "Display": true, 
+    "Lecture Capture": {
+	"name": "Lecture capture",
+	"link": "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=e78b72e4-8bc1-4432-bbee-aaf80118c587"
+    }, 
+      "Readings": [],
+    "Summary": [
+      {
+          "link": "lectures/python.html",
+        "name": "Notes"
+      }
+    ], 
+    "Topic": "More trees, Python intro"
+  }, 
+  {
+    "Date": "Oct 30th", 
+    "Display": true, 
+    "Lecture Capture": {
+	"name": "Lecture capture",
+	"link": "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=724b3061-9f3b-49df-b6ba-aaf601187dea"
+    }, 
+      "Readings": [],
+    "Summary": [
+      {
+          "link": "lectures/trees.html",
+        "name": "Notes"
+      }
+    ], 
+    "Topic": "Trees"
+  }, 
+  {
+    "Date": "Oct 28th", 
+    "Display": true, 
+    "Lecture Capture": {
+	"name": "Lecture capture",
+	"link": "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=c116833d-f1c4-4c19-9081-aaf401185321"
+    }, 
+      "Readings": [],
+    "Summary": [
+      {
+          "link": "lectures/performance.html",
+        "name": "Notes"
+      }
+    ], 
+    "Topic": "Performance, tree intro"
+  }, 
+  {
+    "Date": "Oct 25rd", 
+    "Display": true, 
+    "Lecture Capture": {
+	"name": "None today",
+	"link": ""
+    }, 
+      "Readings": [],
+    "Summary": [
+      {
+          "link": "",
+        "name": "None today"
+      }
+    ], 
+    "Topic": "Quiz 2, multiple constructors review, project 2 intro"
+  }, 
+  {
+    "Date": "Oct 23rd", 
+    "Display": true, 
+    "Lecture Capture": {
+	"name": "Lecture capture",
+	"link": "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=92656f7c-da98-46ac-8936-aaef015d6ee0"
+    }, 
+      "Readings": [],
+    "Summary": [
+      {
+          "link": "lectures/multiple-constructors.html",
+        "name": "Notes"
+      }
+    ], 
+    "Topic": "Data types with multiple constructors"
+  }, 
+  {
+    "Date": "Oct 21st", 
+    "Display": true, 
+    "Lecture Capture": {
+	"name": "Lecture capture",
+	"link": "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=e05db3a3-a513-4f39-83e7-aaed01186f05"
+    }, 
+      "Readings": [],
+    "Summary": [
+      {
+          "link": "lectures/more-data-types.html",
+        "name": "Notes"
+      }
+    ], 
+    "Topic": "More data types"
+  }, 
+  {
+    "Date": "Oct 18th", 
+    "Display": true, 
+    "Lecture Capture": {
+	"name": "Lecture capture",
+	"link": "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=e4b9da32-35db-4ee3-9b89-aaea01187207"
+    }, 
+      "Readings": [],
+    "Summary": [
+      {
+          "link": "lectures/design-recipe.html",
+        "name": "Notes"
+      }
+    ], 
+    "Topic": "The design recipe, introduction to datatypes"
+  }, 
+  {
+    "Date": "Oct 16th", 
+    "Display": true, 
+    "Lecture Capture": {
+	"name": "Lecture capture",
+	"link": "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=7a0d5835-7265-4b0c-8a79-aae801186d34"
+    }, 
+      "Readings": [],
+    "Summary": [
+      {
+          "link": "",
+        "name": "No notes today"
+      }
+    ], 
+    "Topic": "Big data discussion"
+  }, 
+  {
+    "Date": "Oct 11th", 
+    "Display": true, 
+    "Lecture Capture": {
+	"name": "Lecture capture",
+	"link": "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=22d25abe-5437-4245-b17d-aae301186c66"
+    }, 
+      "Readings": [],
+    "Summary": [
+      {
+        "link": "lectures/more-recursion.html", 
+        "name": "Notes"
+      }
+    ], 
+    "Topic": "More recursive functions"
+  }, 
+  {
+    "Date": "Oct 9th", 
+    "Display": true, 
+    "Lecture Capture": {
+	"name": "Lecture capture",
+	"link": "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=fac45cb7-a5a8-4a3e-9228-aae101186d46#"
+    }, 
+      "Readings": [],
+    "Summary": [
+      {
+        "link": "lectures/secret-nature-of-lists.html", 
+        "name": "Notes"
+      }
+    ], 
+    "Topic": "The secret nature of lists"
+  }, 
+  {
+    "Date": "Oct 7th", 
+    "Display": true, 
+    "Lecture Capture": {
+	"name": "Lecture capture",
+	"link": "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=d507a2af-48aa-477c-a247-aadf01184d04"
+    }, 
+      "Readings": [],
+    "Summary": [
+      {
+        "link": "lectures/list-operations.html", 
+        "name": "Notes"
+      }
+    ], 
+    "Topic": "Operations on lists"
+  }, 
+  {
+    "Date": "Oct 4th", 
+    "Display": true, 
+    "Lecture Capture": {
+	"name": "Lecture capture",
+	"link": "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=7d9ee83b-78f7-43f4-93e9-aadc0133a40b"
+    }, 
+      "Readings": [],
+    "Summary": [
+      {
+        "link": "lectures/list-intro.html", 
+        "name": "Notes"
+      }
+    ], 
+    "Topic": "More data errors, introduction to lists"
+  }, 
+  {
+    "Date": "Oct 2nd", 
+    "Display": true, 
+    "Lecture Capture": {
+	"name": "Lecture capture",
+	"link": "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=03126820-998f-4a57-a9dc-aada01189010"
+    }, 
+      "Readings": [],
+    "Summary": [
+      {
+        "link": "lectures/table-errors.html", 
+        "name": "Notes"
+      }
+    ], 
+    "Topic": "Handling errors in data"
+  }, 
+  {
+    "Date": "Sep 30th", 
+    "Display": true, 
+    "Lecture Capture": {
+	"name": "Lecture capture",
+	"link": "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=36f187f0-9ec1-4798-aa84-aad8011853d9"
+    }, 
+      "Readings": [],
+    "Summary": [
+      {
+        "link": "lectures/table-functions.html", 
+        "name": "Notes"
+      }
+    ], 
+    "Topic": "Nested functions, working with multiple tables"
+  }, 
+  {
+    "Date": "Sep 27th", 
+    "Display": true, 
+    "Lecture Capture": {
+	"link": "",
+	"name": "No lecture capture today--sorry!"
+    }, 
+      "Readings": [],
+    "Summary": [
+      {
+        "link": "lectures/quiz1.html", 
+        "name": "Notes"
+      }
+    ], 
+    "Topic": "Quiz 1, Homework 4, reactors"
+  }, 
+  {
+    "Date": "Sep 25th", 
+    "Display": true, 
+    "Lecture Capture": {
+	"link": "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=8ae7192b-8f17-4eb0-bf5c-aad30118531b",
+	"name": "Lecture capture"
+    }, 
+      "Readings": [],
+    "Summary": [
+      {
+        "link": "lectures/plotting-tables.html", 
+        "name": "Notes"
+      }
+    ], 
+    "Topic": "Testing tables, plotting"
+  }, 
+  {
+    "Date": "Sep 23rd", 
+    "Display": true, 
+    "Lecture Capture": {
+	"link": "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=93ec143b-d6a0-47be-a792-aad1011873d4",
+	"name": "Lecture capture"
+    }, 
+      "Readings": [],
+    "Summary": [
+      {
+        "link": "lectures/testing-tables.html", 
+        "name": "Notes"
+      }
+    ], 
+    "Topic": "Algorithmic bias, testing tables"
+  }, 
+  {
+    "Date": "Sep 20th", 
+    "Display": true, 
+    "Lecture Capture": {
+	"link": "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=732a3093-af3b-4679-945a-aace01183ff1",
+	"name": "Lecture capture"
+    }, 
+      "Readings": [],
+    "Summary": [
+      {
+        "link": "lectures/more-tables.html", 
+        "name": "Notes"
+      }
+    ], 
+    "Topic": "More tables: filtering and adding columns"
+  }, 
+  {
+    "Date": "Sep 18th", 
+    "Display": true, 
+    "Lecture Capture": {
+	    "link": "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=debb90fd-1bc1-4617-86cf-aacc012b51ae", 
+	"name": "Lecture capture"
+    }, 
+      "Readings": [],
+    "Summary": [
+      {
+        "link": "lectures/tables.html", 
+        "name": "Notes"
+      }
+    ], 
+    "Topic": "How functions evaluate; introduction to tables"
+  }, 
+  {
+    "Date": "Sep 16th", 
+    "Display": true, 
+    "Lecture Capture": {
+	    "link": "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=6dfecd84-704a-480f-b28d-aaca0117d503", 
+	"name": "Lecture capture"
+    }, 
+      "Readings": [],
+    "Summary": [
+      {
+        "link": "lectures/more-conditionals-helpers.html", 
+        "name": "Notes"
+      }
+    ], 
+    "Topic": "More conditionals and helper functions"
+  }, 
+  {
+    "Date": "Sep 13th", 
+    "Display": true, 
+    "Lecture Capture": {
+	    "link": "https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=16abe943-8d4f-419a-9f5b-aaca01476e8e", 
+      "name": "Lecture capture"
+    }, 
+      "Readings": [],
+    "Summary": [
+      {
+        "link": "lectures/conditionals.html", 
+        "name": "Notes"
+      }
+    ], 
+    "Topic": "Conditionals and Booleans"
+  }, 
+  {
+    "Date": "Sep 11th", 
+    "Display": true, 
+    "Lecture Capture": {
+	    "link": "", 
+      "name": "N/A"
+    }, 
+      "Readings": [],
+    "Summary": [
+      {
+        "link": "lectures/functions.html", 
+        "name": "Notes"
+      }
+    ], 
+    "Topic": "Evaluation and functions"
+  }, 
+  {
+    "Date": "Sep 9th", 
+    "Display": true, 
+    "Lecture Capture": {
+	    "link": "", 
+      "name": "N/A"
+    }, 
+      "Readings": [],
+    "Summary": [
+      {
+        "link": "lectures/documentation-types-naming.html", 
+        "name": "Notes"
+      }
+    ], 
+    "Topic": "Documentation, types, and organization"
+  }, 
+  {
+    "Date": "Sep 6th", 
+    "Display": true, 
+    "Lecture Capture": {
+	    "link": "", 
+      "name": "N/A"
+    }, 
+      "Readings": [],
+    "Summary": [
+      {
+        "link": "lectures/programs.html", 
+        "name": "Notes"
+      }
+    ], 
+    "Topic": "Our First Programs"
+  }, 
+  {
+    "Date": "Sep 4th", 
+    "Display": true, 
+    "Lecture Capture": {"name": "N/A", "link": ""}, 
+    "Readings": [], 
+    "Summary": [{"name": "Notes", "link": "lectures/overview.html"}], 
+    "Topic": "Course Overview"
+  }
+]

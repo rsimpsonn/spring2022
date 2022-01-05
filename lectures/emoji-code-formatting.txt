@@ -1,0 +1,60 @@
+# Handout on code structure and presentation
+# Created by Kathi Fisler (Brown University)
+
+# the original version
+
+include image
+
+base = circle(50, "solid", "yellow")
+eye = circle(9, "solid", "blue")
+# create pair of eyes, using another square as a spacer
+eye-spacer = square(12, "solid", "yellow")
+eye-bar = beside(eye, beside(eye-spacer, eye))
+mouth = ellipse(30, 15, "solid", "red")
+# create a 3-pixel border for the base
+border = circle(53, "solid", "black")
+eye-face-spacer = rectangle(30, 15, "solid", "yellow")
+eyes-and-mouth = above(eye-bar, above(eye-face-spacer, mouth))
+the-face = overlay(eyes-and-mouth, base)
+add-border = overlay(the-face, border)
+emoji = scale(0.2, add-border)
+emoji
+
+----------------------------------------------------------
+# the same code, but cleaned up
+
+# Kathi Fisler
+# I wrote this solution on my own
+
+include image
+
+base = circle(50, "solid", "yellow")
+eye = circle(9, "solid", "blue")
+
+# create pair of eyes, using another square as a spacer
+eye-bar = 
+  beside(eye, 
+    beside(square(12, "solid", "yellow"), 
+      eye))
+
+mouth = ellipse(30, 15, "solid", "red")
+
+# create a 3-pixel border for the base
+# use the image-width to compute the border size
+border = circle((image-width(base) / 2) + 3, "solid", "black")
+
+# keep the large image so we can look at it if needed
+emoji-large =
+    overlay(
+      overlay(
+        above(eye-bar,
+          above(rectangle(30, 15, "solid", "yellow"),
+            mouth)),
+        base),
+      border)
+
+# scale the large image down to the size we want
+emoji = scale(0.2, emoji-large)
+
+# automatically show the image when we run the file
+emoji

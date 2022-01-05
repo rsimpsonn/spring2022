@@ -1,0 +1,151 @@
+[
+  {
+      "Display": true,
+      "In": "Fri 9/17/21 10am",
+      "Assignment": {"name": "Drill 1", "link": "https://www.gradescope.com/courses/302007/assignments/1459695"},
+      "Out": "Wed 9/15/21 11am",
+      "Solutions": [],
+      "Hold Sols": {"name": "Solution", "link": "https://hackmd.io/@cs111/H1I226PHw"}
+  },
+    {
+	"Display": true,
+	"In": "Mon 9/20/21 10am",
+	"Assignment": {"name": "Drill 2", "link": "https://www.gradescope.com/courses/302007/assignments/1459696"},
+	"Out": "Fri 9/17/21 11am",
+	"Solutions": [],
+	"Hold Solutions": {"name": "Solution", "link": "https://hackmd.io/@cs111/SJmPWruSD"}
+    },
+    {
+	"Display": true,
+	"In": "Fri 9/24/21 10am",
+	"Assignment": {"name": "Drill 3", "link": "https://www.gradescope.com/courses/302007/assignments/1459697"},
+	"Out": "Wed 9/22/21 10am",
+	"Solutions": []
+    },
+    {
+	"Display": true,
+	"In": "Mon 9/27/21 10am",
+	"Assignment": {"name": "Drill 4", "link": "https://www.gradescope.com/courses/302007/assignments/1459699"},
+	"Out": "Fri 9/24/21 11am",
+	"Solutions": []
+    },
+    {
+	"Display": true,
+	"In": "Fri 10/1/21 10am",
+	"Assignment": {"name": "Drill 5", "link": "https://www.gradescope.com/courses/302007/assignments/1459701"},
+	"Out": "Wed 9/29/21 11am",
+	"Solutions": []
+    },
+    {
+	"Display": true,
+	"In": "Mon 10/8/21 10am",
+	"Assignment": {"name": "Drill 6", "link": "https://www.gradescope.com/courses/302007/assignments/1459703"},
+	"Out": "Fri 10/1/21 11am",
+	"Solutions": []
+    },
+    {
+	"Display": true,
+	"In": "Not due",
+	"Assignment": {"name": "No Drill 7", "link": null},
+	"Out": "Wed 10/6/21 11am",
+	"Solutions": []
+    },
+    {
+	"Display": true,
+	"In": "Not due",
+	"Assignment": {"name": "Quiz 1 Practice", "link": "https://canvas.brown.edu/files/64520754/download?download_frd=1"},
+	"Out": "Fri 10/8/21 11am",
+	"Solutions": []
+    },
+    {
+	"Display": true,
+	"In": "Not due",
+	"Assignment": {"name": "No Drill 8", "link": null},
+	"Out": "Fri 10/13/21 11am",
+	"Solutions": []
+    },
+    {
+	"Display": true,
+	"In": "Not due",
+	"Assignment": {"name": "No Drill 9", "link": null},
+	"Out": "Fri 10/15/21 11am",
+	"Solutions": []
+    },
+    {
+	"Display": true,
+	"In": "Fri 10/22/21 10am",
+	"Assignment": {"name": "Drill 10", "link": "https://www.gradescope.com/courses/302007/assignments/1459705"},
+	"Out": "Wed 10/20/21 11am",
+	"Solutions": []
+    },
+    {
+	"Display": true,
+	"In": "Mon, 10/25/21 10am",
+	"Assignment": {"name": "Drill 11", "link": "https://www.gradescope.com/courses/302007/assignments/1459706"},
+	"Out": "Fri, 10/22/21 11am",
+	"Solutions": []
+    },
+    {
+	"Display": true,
+	"In": "Fri, 10/29/21 10am",
+	"Assignment": {"name": "Drill 12", "link": "https://www.gradescope.com/courses/302007/assignments/1612667"},
+	"Out": "Wed, 10/27/21 11am",
+	"Solutions": []
+    },
+    {
+	"Display": true,
+	"In": "Mon, 11/1/21 10am",
+	"Assignment": {"name": "Drill 13", "link": "https://www.gradescope.com/courses/302007/assignments/1618839"},
+	"Out": "Fri, 10/29/21 11am",
+	"Solutions": []
+    },
+    {
+	"Display": true,
+	"In": "Fri, 11/5/21 10am",
+        "Assignment": {"name": "Drill 14", "link": "https://www.gradescope.com/courses/302007/assignments/1630650"},
+	"Out": "Wed, 11/3/21 11am",
+	"Solutions": []
+    },
+    {
+	"Display": true,
+	"In": "Not due",
+	"Assignment": {"name": "No Drill 15", "link": null},
+	"Out": "Fri, 11/5/21 11am",
+	"Solutions": []
+    },
+    {
+	"Display": true,
+	"In": "Fri, 11/12/21 10am",
+	"Assignment": {"name": "Drill 16", "link": "https://www.gradescope.com/courses/302007/assignments/1459712"},
+	"Out": "Wed, 11/10/21 11am",
+	"Solutions": []
+    },    
+    {
+	"Display": true,
+	"In": "Mon, 11/15/21 10am",
+	"Assignment": {"name": "Drill 17", "link": "https://www.gradescope.com/courses/302007/assignments/1459713"},
+	"Out": "Fri, 11/12/21 11am",
+	"Solutions": []
+    },
+    {
+	"Display": true,
+	"In": "Fri, 11/19/21 10am",
+	"Assignment": {"name": "Drill 18", "link": "https://www.gradescope.com/courses/302007/assignments/1459716"},
+	"Out": "Wed, 11/17/21 11am",
+	"Solutions": []
+    },
+    {
+	"Display": true,
+	"In": "Mon, 11/22/21 10am",
+	"Assignment": {"name": "Drill 19", "link": "https://www.gradescope.com/courses/302007/assignments/1459714"},
+	"Out": "Fri, 11/19/21 11am",
+	"Solutions": []
+    },
+    {
+	"Display": true,
+	"In": "Mon, 12/6/21 10am",
+	"Assignment": {"name": "Drill 20 (optional)", "link": "https://www.gradescope.com/courses/302007/assignments/1459718"},
+	"Out": "Fri, 12/1/21 11am",
+	"Solutions": []
+    }
+]
