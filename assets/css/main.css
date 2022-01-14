@@ -291,13 +291,42 @@ a:hover {
 
 /* HOMEPAGE */
 
-#flex-container {
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
+.grid-container {
+    display:grid;
+    column-gap: 50px;
+    margin-bottom: 20px;
 }
 
+
+/* Contains current assignments and hours schedule*/
+#grid-container-1 {
+    grid-template-columns: 2fr 1fr;
+}
+
+/* Contains shout-out, anonymous feedback, and quick links*/
+#grid-container-2 {
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.grid-container>div {
+    padding: 15px;
+    border-radius: 20px;
+    /* height: 500px; */
+    background-color: green;
+}
+
+
+.flex-container {
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    text-align:center;
+}
+
+.flex-container>div {
+    background-color: green;
+}
 
 #content-top {
     padding-left:10%;
@@ -313,6 +342,12 @@ a:hover {
 #content-top p {
     text-align: center;
 }
+
+#flex-container div {
+    background-color:green;
+}
+
+
 
 @media (min-width: 786px) {
     #sidebar {
