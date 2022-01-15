@@ -295,8 +295,8 @@ a:hover {
     display:grid;
     column-gap: 50px;
     margin-bottom: 20px;
+    
 }
-
 
 /* Contains current assignments and hours schedule*/
 #grid-container-1 {
@@ -311,27 +311,41 @@ a:hover {
 .grid-container>div {
     padding: 15px;
     border-radius: 20px;
-    /* height: 500px; */
-    background-color: green;
+    background-color: #393885;
 }
 
 
 .flex-container {
     display:flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: row;
-    text-align:center;
+    /* justify-content: space-around; */
+    /* align-items: center; */
+    flex-direction: column;
+    /* text-align:center; */
 }
 
-.flex-container>div {
-    background-color: green;
+.assignment-container {
+    border-radius: 10px;
+    background-color: lightslategrey;
+}
+
+.assignment-container>div {
+    padding:15px;
+ }
+
+#hours-schedule {
+    text-align: center;
+}
+
+#calendar-container {
+    height: 100%;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 #content-top {
     padding-left:10%;
     padding-right:10%;
-    margin-bottom: 5%;
+    margin-bottom: 2%;
     text-align: center;
 }
 
@@ -341,10 +355,6 @@ a:hover {
 
 #content-top p {
     text-align: center;
-}
-
-#flex-container div {
-    background-color:green;
 }
 
 

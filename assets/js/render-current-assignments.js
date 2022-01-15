@@ -63,12 +63,6 @@ function findCurrAssignment(allAssignments) {
     }
 }
 
-async function renderAssignments() {
-    renderCurrAssignment('current-homework', '/assets/json/assignments.json')
-    renderCurrAssignment('current-project', '/assets/json/projects.json')
-    renderCurrAssignment('current-drill', '/assets/json/drills.json')
-}
-
 function renderCurrAssignment(domElementId, filepath) {
     retrieveJson(filepath)
     .then(data => {
@@ -82,11 +76,6 @@ function renderCurrAssignment(domElementId, filepath) {
     })
 }
 
-function renderNoAssignment(domElementId) {
-    // assignmentDiv = document.getElementById(domElementId)
-    // assignmentDiv.innerHTML = "No Assignment Out!"
-}
-
 // This can be used for assignments, drills, projects; not for labs
 function renderAssignmentHelper(domElementId, currentAssignment) {
     assignmentDiv = document.getElementById(domElementId)
@@ -96,6 +85,27 @@ function renderAssignmentHelper(domElementId, currentAssignment) {
     assignmentDue = document.createTextNode(currentAssignment['In'])
     assignmentDiv.appendChild(assignmentTitle)
     assignmentDiv.appendChild(assignmentDue)
+}
+
+function renderMostRecentLab() {
+    const labJsonUrl = '/assets/json/labs.json'
+    retrieveJson(labJsonUrl)
+    .then(labs => {
+        displayedOnly = labs.filter((lab) => lab["Display"])
+        lastDisplayed = displayedOnly[displayedOnly.length - 1]
+        labDiv = document.getElementById('current-lab')
+        labDiv.innerHTML = ''
+        labTitle = document.createElement('h4')
+        labTitle.innerHTML = lastDisplayed["Lab"]["name"]
+        labDiv.appendChild(labTitle)
+    })
+}
+
+async function renderAssignments() {
+    renderCurrAssignment('current-homework', '/assets/json/assignments.json')
+    renderCurrAssignment('current-project', '/assets/json/projects.json')
+    renderCurrAssignment('current-drill', '/assets/json/drills.json')
+    renderMostRecentLab()
 }
 
 renderAssignments()
