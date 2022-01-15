@@ -77,113 +77,78 @@
 					</article>
 				</div>
 			</div>
-			<div class="grid-container" id="grid-container-1">
+			<div class="grid-container">
 				<div id="current-assignments" >
-					<h2>What's out right now?</h2>
-					<div class="flex-container">
+					<header>What's out right now?</header>
+					<div class="col-flex">
 						<div>
-							<h3>Homework</h3>
+							<h4>Homework</h4>
 							<div class="assignment-container">
 								<div id="current-homework">
-									<h4>Homework</h4>
-									No homework out!
+									<strong>No homework out!</strong>
 								</div>
-								
 							</div>
 						</div>
 						<div>
-							<h3>Drill</h3>
+							<h4>Drill</h4>
 							<div class="assignment-container">
 								<div id="current-drill">
-									<h4>Drill</h4>
-									No drill out!
+									<strong>No drill out!</strong>
 								</div>
 							</div>
 						</div>
 						<div>
-							<h3>Project</h3>
+							<h4>Project</h4>
 							<div class="assignment-container">
 								<div id="current-project">
-									<h4>Project</h4>
-									No project out!
+									<strong>No project out!</strong>
 								</div>
 							</div>	
 						</div>
 						<div>
-							<h3>Lab</h3>
+							<h4>Lab</h4>
 							<div class="assignment-container">
 								<div id="current-lab">
-									<h4>Lab</h4>
-									No lab out!
+									<strong>No lab out!</strong>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 				<div id="hours-schedule">
-					<h2>Hours Schedule</h2>
+					<header>Hours Schedule</header>
 					<div id="calendar-container">
-						<iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=America%2FNew_York&mode=AGENDA&showTitle=0&showPrint=0&showCalendars=0&showDate=0&src=Y185MnFrMWJlcnB1N2pnZGtvZDYya2FoczV2b0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=Y19jYWJ2YmhvM3ZkcmFpcmhtMmkzMmF0NzhuOEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%23F4511E&color=%23E4C441" style="border-width:0" width="400" height="600" frameborder="0" scrolling="no"></iframe>					
-					</div>
+						<!--height: 350, width: 400. Will need to be adjust for smaller screens -->
+						<iframe src="https://calendar.google.com/calendar/embed?height=350&wkst=1&bgcolor=%23ffffff&ctz=America%2FNew_York&showTitle=0&showDate=0&showNav=0&showPrint=0&showTabs=0&showTz=0&showCalendars=0&mode=AGENDA&src=Y185MnFrMWJlcnB1N2pnZGtvZDYya2FoczV2b0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=Y19jYWJ2YmhvM3ZkcmFpcmhtMmkzMmF0NzhuOEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%23F4511E&color=%23E4C441" style="border:solid 1px #777" width="400" height="350" frameborder="0" scrolling="no"></iframe>					</div>
 				</div>
-			</div>
-			<div class="grid-container" id="grid-container-2">
-				<div>
-					<h2>Shout out a TA!</h2>
+				<div id="ta-shoutout">
+					<header>Shout out a TA!</header>
 					Shout-out(TODO)
 				</div>
-				<div>
-					<h2>Anonymous Feedback</h2>
+				<div id="feedback">
+					<header>Anonymous Feedback</header>
 					Anonymous Feedback (TODO)
 				</div>
-				<div>
-					<h2>Quick Links</h2>
-					Quick Links (TODO)
+				<div id="quick-links">
+					<header>Quick Links</header>
+					<div id="quick-links-container">
+						<div class="col-flex">
+							<a href="https://www.gradescope.com/"><b>Gradescope</b></a>
+							<a href="https://hackmd.io/@cs111/syllabus-f21"><b>Course Syllabus</b></a>
+							<a href="https://forms.gle/X1K9TA6w7XaD8U8C7"><b>Feedback Form</b></a>
+						</div>
+						<div>
+							
+						</div>
+						<div class="col-flex">
+							<a href="https://forms.gle/3s2T1TWqFpff4hdBA"><b>Lab Switch From</b></a>
+							<a href="https://forms.gle/AfCHKU8vGLqrHWpNA"><b>Blocklist Form</b></a>
+							<a href="https://hackmd.io/@cs111/cs200-bridge-2021"><b>Going to CSCI 0200</b></a>
+						</div>
+					</div>
+					
 				</div>
 			</div>
-
-
-			<h3>Quick Links</h3>
-			<div id="quick-links-container">
-				<div class="quick-links">
-				<b>
-			<a href="https://hackmd.io/@cs111/syllabus-f21"
-			target="_blank"
-			class="quick-links-link">Course Syllabus</a>
-				</b>
-				</div>
-				<div class="quick-links">
-				<b>
-			<a href="https://forms.gle/X1K9TA6w7XaD8U8C7" target="_blank" class="quick-links-link">Anonymous Feedback Form</a>
-				</b>
-				</div>
-				<!-- <div class="quick-links">
-			<b>
-			<a href="docs/pycharm_setup.html" target="_blank" class="quick-links-link">Pycharm installation guide</a>
-			</b>
-			</div> -->
-			</div>
-		<div id="quick-links-container">
-			<div class="quick-links">
-			<b>
-			<a
-				href="https://hackmd.io/@cs111/cs200-bridge-2021"
-				target="_blank"
-				class="quick-links-link">Going to CSCI 0200</a>
-			</b>
-			</div>
-			<div class="quick-links">
-				<b>
-			<a href="https://forms.gle/3s2T1TWqFpff4hdBA" target="_blank" class="quick-links-link">Lab Switch Form</a>
-				</b>
-				</div>
-				<div class="quick-links">
-				<b>
-			<a href="https://forms.gle/AfCHKU8vGLqrHWpNA" target="_blank" class="quick-links-link">Blocklist Form</a>
-				</b>
-				</div>
-		</div>
-
 		<h3>Important dates</h3>
 		<ul>
 			<li>Final exam: Dec 16 (as per CAB)</li>
@@ -228,7 +193,6 @@
 	</div>
       </span>
     </main>
-
     <!-- Scripts -->
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>

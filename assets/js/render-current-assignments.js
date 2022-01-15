@@ -13,6 +13,8 @@ from the top of the project. Then, visit localhost:8000/index.html and view the 
 const CURR_DATE = new Date()
 const CURR_TIME = new Date().getTime()
 const MILISECONDS_IN_24_HOURS = 86_400_000
+const TESTING_RETRIEVAL = false
+const RENDER_CURR_LAB = true
 
 async function retrieveJson(filepath) {
     const response = await fetch(filepath);
@@ -21,16 +23,16 @@ async function retrieveJson(filepath) {
 }
 
 // Test to see if retrieving the JSON works on your end
-retrieveJson('/assets/json/labs.json')
-.then(data => {
-    console.log("Successfully fetched JSON data")
-    console.log(data)
-})
-.catch(error => {
-    console.error(error);
-    console.error(`If you are getting an error about the fetch URL being invalid, try running the site from a server
-    e.g. python -m http.server from the terminal`);
-})
+// retrieveJson('/assets/json/labs.json')
+// .then(data => {
+//     console.log("Successfully fetched JSON data")
+//     console.log(data)
+// })
+// .catch(error => {
+//     console.error(error);
+//     console.error(`If you are getting an error about the fetch URL being invalid, try running the site from a server
+//     e.g. python -m http.server from the terminal`);
+// })
 
 /**
  * Take the date format "mm/dd/yyyy" and convert it to a Javascript date
@@ -50,7 +52,6 @@ function cleanDate(date, setToMaxTime) {
 function findCurrAssignment(allAssignments) {
     // filter to find all assignments that are within the current date range and are on display
     const withinDateRangeAndDisplayed = allAssignments.filter((assignment) => {
-        // console.log(assignment)
         outTime = cleanDate(assignment["Out"], false).getTime()
         inTime = cleanDate(assignment["In"], true).getTime()
         return (outTime - CURR_TIME >= 0) && (inTime - CURR_TIME <= 0) && assignment["Display"]
@@ -66,7 +67,10 @@ function findCurrAssignment(allAssignments) {
 function renderCurrAssignment(domElementId, filepath) {
     retrieveJson(filepath)
     .then(data => {
-        currentAssignment = findCurrAssignment(data)
+        currentAssignment = data[0]
+        if (!TESTING_RETRIEVAL) {
+            currentAssignment = findCurrAssignment(data)
+        }
         console.log(currentAssignment)
         if (currentAssignment != null) {
             renderAssignmentHelper(domElementId, currentAssignment)
@@ -78,12 +82,17 @@ function renderCurrAssignment(domElementId, filepath) {
 
 // This can be used for assignments, drills, projects; not for labs
 function renderAssignmentHelper(domElementId, currentAssignment) {
+    // This can be done much easier in JQuery. Unfortunately, I do not know JQuery
     assignmentDiv = document.getElementById(domElementId)
     assignmentDiv.innerHTML = ""
-    assignmentTitle = document.createElement('h4')
+    assignmentLink = document.createElement('a')
+    assignmentLink.href = currentAssignment['Assignment']['link']
+    assignmentLink.target = "_blank"
+    assignmentTitle = document.createElement('strong')
     assignmentTitle.innerHTML = currentAssignment['Assignment']['name']
-    assignmentDue = document.createTextNode(currentAssignment['In'])
-    assignmentDiv.appendChild(assignmentTitle)
+    assignmentLink.appendChild(assignmentTitle)
+    assignmentDue = document.createTextNode("Due " + currentAssignment['In'])
+    assignmentDiv.appendChild(assignmentLink)
     assignmentDiv.appendChild(assignmentDue)
 }
 
@@ -95,9 +104,13 @@ function renderMostRecentLab() {
         lastDisplayed = displayedOnly[displayedOnly.length - 1]
         labDiv = document.getElementById('current-lab')
         labDiv.innerHTML = ''
-        labTitle = document.createElement('h4')
+        labLink = document.createElement('a')
+        labLink.href = lastDisplayed["Lab"]["link"]
+        labLink.target = "_blank"
+        labTitle = document.createElement('strong')
         labTitle.innerHTML = lastDisplayed["Lab"]["name"]
-        labDiv.appendChild(labTitle)
+        labLink.appendChild(labTitle)
+        labDiv.appendChild(labLink)
     })
 }
 
@@ -105,7 +118,9 @@ async function renderAssignments() {
     renderCurrAssignment('current-homework', '/assets/json/assignments.json')
     renderCurrAssignment('current-project', '/assets/json/projects.json')
     renderCurrAssignment('current-drill', '/assets/json/drills.json')
-    renderMostRecentLab()
+    if (RENDER_CURR_LAB) {
+        renderMostRecentLab()
+    }
 }
 
 renderAssignments()

@@ -22,7 +22,7 @@ table {
       display: block;
     }
 
-.quick-links {
+/* .quick-links {
     font-size: 0.85em;
   	border-radius: 0.25em;
   	border: solid 1px rgba(161, 198, 255, 1);
@@ -36,7 +36,7 @@ table {
 
 a.quick-links-link {
     color: white !important;
-}
+} */
 
 img.staff-pic {
     background-color: white;
@@ -73,7 +73,7 @@ a.nav-button:hover {
     cursor: pointer;
     /* border-bottom: solid 0.25em #3b0d02  !important; */
 }
-h1, h2, h3 {
+h1, h2, h3, h4 {
     font-family: 'Roboto', sans-serif;
 }
 h1 {
@@ -94,13 +94,19 @@ h3 {
 h4 {
     margin-top: 10px;
     margin-bottom: 10px;
-    text-decoration: underline;
+    /* text-decoration: underline; */
+    font-weight: bolder;
+}
+
+header {
+    font-weight: bolder;
+    color: #F4E878;
+    font-size: 20px;
 }
 
 a {
     /* border-bottom: solid 1px #378aba; */
     color: rgba(161, 198, 255, 1);
-
     font-weight: bold;
 }
 
@@ -291,57 +297,6 @@ a:hover {
 
 /* HOMEPAGE */
 
-.grid-container {
-    display:grid;
-    column-gap: 50px;
-    margin-bottom: 20px;
-    
-}
-
-/* Contains current assignments and hours schedule*/
-#grid-container-1 {
-    grid-template-columns: 2fr 1fr;
-}
-
-/* Contains shout-out, anonymous feedback, and quick links*/
-#grid-container-2 {
-    grid-template-columns: 1fr 1fr 1fr;
-}
-
-.grid-container>div {
-    padding: 15px;
-    border-radius: 20px;
-    background-color: #393885;
-}
-
-
-.flex-container {
-    display:flex;
-    /* justify-content: space-around; */
-    /* align-items: center; */
-    flex-direction: column;
-    /* text-align:center; */
-}
-
-.assignment-container {
-    border-radius: 10px;
-    background-color: lightslategrey;
-}
-
-.assignment-container>div {
-    padding:15px;
- }
-
-#hours-schedule {
-    text-align: center;
-}
-
-#calendar-container {
-    height: 100%;
-    margin-top: auto;
-    margin-bottom: auto;
-}
-
 #content-top {
     padding-left:10%;
     padding-right:10%;
@@ -355,6 +310,84 @@ a:hover {
 
 #content-top p {
     text-align: center;
+}
+
+.grid-container {
+    display:grid;
+    column-gap: 30px;
+    row-gap: 30px;
+    grid-template-areas: 
+        "assignments assignments hours" 
+        "shoutout feedback links";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 2fr 1fr;
+}
+
+#current-assignments {
+    grid-area: assignments;
+}
+
+.grid-container>div {
+    padding: 15px;
+    border-radius: 20px;
+    background-color: #393885;
+}
+
+.col-flex {
+    display:flex;
+    flex-direction: column;
+}
+
+.assignment-container {
+    border-radius: 10px;
+    background-color: lightslategrey;
+}
+
+.assignment-container>div {
+    font-size: 15px;
+    padding: 10px 15px;
+    display:flex;
+    justify-content: space-between;
+}
+
+.custom-header1 {
+    font-weight: bolder;
+    color: #F4E878;
+    font-size: 20px;
+}
+
+#hours-schedule {
+    text-align: center;
+}
+
+#calendar-container {
+    height: 100%;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+#quick-links-container {
+    /* TODO FIX THIS SO THAT VALUES ARE NOT HARDCODED */
+    margin-top:15px;
+    margin-bottom: 10px;
+    display:flex;
+    height: 70%;
+}
+
+#quick-links-container>div {
+    justify-content: space-between;
+}
+
+#quick-links b {
+    font-size: 0.85em;
+    border-radius: 0.25em;
+    border: solid 1px rgba(161, 198, 255, 1);
+    width: 25%;
+    padding: 0.5em;
+    min-width: 100px;
+    margin: 1.5em auto;
+    background-color: rgba(31, 109, 173, 1);
+    color: white !important;
 }
 
 
