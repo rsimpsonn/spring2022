@@ -548,9 +548,62 @@ a:visited, a:active, a:focus {
 }
 
 
-/* NEW CSS */
+
+/*New CSS for Resources page*/
+.resource_box {
+    padding: 10px;
+    border: 2px solid rgba(179, 4, 94, 1);
+    color:#FFFAC9;
+    background-color: rgba(57, 56, 133, .5);
+    border-radius: 15px;
+    margin: 0px 10px 10px;
+    max-height: 0;
+    min-height: 60px;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+.collapsible {
+    color: #FFFAC9;
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+  }
+
+.button_format{
+    color:#FFFAC9;
+    background-color: transparent;
+    font-size: 25px;
+    max-height: 0;
+    min-height: 50px;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.useful_links {
+    padding: 10px;
+    border: 2px solid rgba(179, 4, 94, 1);
+    color:#FFFAC9;
+    background-color: rgba(57, 56, 133, .5);
+    border-radius: 15px;
+    margin: 0px 10px 10px;
+}
 
 @media (min-width: 786px) {
+    .left {
+        width:  25%;
+    }
+
+    .right {
+        width:  70%;
+  }
+      
     .lectures-container {
         width:  70%;
         padding: 10px;
@@ -563,7 +616,15 @@ a:visited, a:active, a:focus {
 }
 
 @media (max-width: 786px) {
-    .lectures-container {
+    .left {
+        width:  100%;
+    }
+
+    .right {
+        width:  100%;
+    }
+  
+  .lectures-container {
         width:  100%;
         padding: 10px;
     }
@@ -572,6 +633,36 @@ a:visited, a:active, a:focus {
         width:  100%;
         padding: 10px;
     }
+}
+
+.quick-links-2 {
+    font-size: .75em;
+  	border-radius: 0.25em;
+  	border: solid 1px black;
+  	width: 25%;
+  	padding: 0.75em;
+  	min-width: 200px;
+    margin: .3em auto;
+    background-color: #D7D4FB;
+    color: black;
+}
+
+a.quick-links-link-2 {
+    color: black !important;
+}
+
+.heading {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.email {
+    font-style: italic;
+}
+
+.resource_header{
+    margin: 0px 10px 10px 10px;
+    padding: 5px;
 }
 
 i {
