@@ -548,6 +548,7 @@ a:visited, a:active, a:focus {
 }
 
 
+
 /*New CSS for Resources page*/
 .resource_box {
     padding: 10px;
@@ -601,6 +602,16 @@ a:visited, a:active, a:focus {
 
     .right {
         width:  70%;
+  }
+      
+    .lectures-container {
+        width:  70%;
+        padding: 10px;
+    }
+
+    .sections-container {
+        width:  30%;
+        padding: 10px;
     }
 }
 
@@ -611,6 +622,16 @@ a:visited, a:active, a:focus {
 
     .right {
         width:  100%;
+    }
+  
+  .lectures-container {
+        width:  100%;
+        padding: 10px;
+    }
+
+    .sections-container {
+        width:  100%;
+        padding: 10px;
     }
 }
 
@@ -642,4 +663,36 @@ a.quick-links-link-2 {
 .resource_header{
     margin: 0px 10px 10px 10px;
     padding: 5px;
+}
+
+i {
+    margin: 2px;
+}
+
+.subtext {
+    font-size: 12px;
+    color:  #454545;
+    margin-top: 8px;
+}
+
+.filter {
+    border-radius: 2px;
+    margin: 5px;
+    padding: 5px;
+    background-color: purple;
+    cursor: pointer;
+}
+
+.filter:hover {
+    background-color: green;
+}
+
+.clear-filters {
+    font-style: italic;
+    cursor: pointer;
+    opacity: 0.75;
+}
+
+.clicked {
+    background-color: blue;
 }

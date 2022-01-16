@@ -17,6 +17,17 @@ def dict_to_link(d):
         link.attr('target', '_blank')
         link.text(d['name'])
 
+    if "icon" in d:
+        icon = PQ(f'<i class="{d["icon"]}" />')
+        link.append(icon)
+
+    if "subtext" in d:
+        wrapper = PQ('<div>')
+        wrapper.append(link)
+        subtext = PQ(f'<div class="subtext" id="tags">{d["subtext"]}</div>')
+        wrapper.append(subtext)
+        link = wrapper
+
     return link
 
 
@@ -129,7 +140,7 @@ update_file('../json/lectures.json',
             '../../lectures.html',
             'lectures-table-wrapper',
             'lectures-table',
-            ['Date', 'Topic', 'Summary', 'Readings', 'Lecture Capture', 'Extras'],
+            ['Date', 'Lecture Recording', 'Readings', 'Extras'],
             'Lectures')
 
 update_file('../json/labs.json',
@@ -164,7 +175,7 @@ update_file('../json/workshops.json',
 	    '../../lectures.html',
 	    'workshops-table-wrapper',
 	    'workshops-table',
-	    ['Date', 'Topic', 'Presentation', 'Recording'],
+	    ['Date', 'Presentation Slides'],
 	    'Workshops')
 
 
