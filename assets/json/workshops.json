@@ -2,77 +2,77 @@
  {
    "Display": true,
    "Date": "Dec 9",
-   "Topic": "Section 12: Final Exam Review",
+   "Presentation Slides": {"name": "Section 12: Final Exam Review", "link": "https://docs.google.com/presentation/d/1r5bARx_-K1n9gSd-zleBQAGwmzrPtN9qjp1UfwTtgxg/edit?usp=sharing", "subtext": "Tags: Fun", "icon": "fa fa-file"},
    "Presentation": {"name": "slides", "link": "https://docs.google.com/presentation/d/1r5bARx_-K1n9gSd-zleBQAGwmzrPtN9qjp1UfwTtgxg/edit?usp=sharing"},
    "Recording": []
  },
  {
    "Display": true,
    "Date": "Dec 2",
-   "Topic": "Section 11: Dictionaries and Dataclasses",
+   "Presentation Slides": "Section 11: Dictionaries and Dataclasses",
    "Presentation": {"name": "slides", "link": "https://docs.google.com/presentation/d/1MpUVo_Cf37hbQ1ODE76U36MoEZ-XsSDrFPKmtL7pjLg/edit?usp=sharing"},
    "Recording": []
  },
  {
    "Display": true,
    "Date": "Nov 18",
-   "Topic": "Section 10: Error Messages, Mutation, and Testing",
+   "Presentation Slides": "Section 10: Error Messages, Mutation, and Testing",
    "Presentation": {"name": "slides", "link": "https://docs.google.com/presentation/d/1D4Bp4MqUmCsBI3ogkbKlnl5XK7_5zpC6InZdgNbZgrE/edit?usp=sharing"},
    "Recording": []
  },
  {
    "Display": true,
    "Date": "Nov 11",
-   "Topic": "Section 9: Intro to Python and For Loops",
+   "Presentation Slides": "Section 9: Intro to Python and For Loops",
    "Presentation": {"name": "slides", "link": "https://docs.google.com/presentation/d/1Mqe1Vz0cpTY42PzgVKxUYSqU2qyeBWaQ/edit?usp=sharing&ouid=104197039466140374244&rtpof=true&sd=true"},
    "Recording": []
  },
  {
    "Display": true,
    "Date": "Oct 28",
-   "Topic": "Section 8: Reactors and Datatypes",
+   "Presentation Slides": "Section 8: Reactors and Datatypes",
    "Presentation": {"name": "slides", "link": "https://docs.google.com/presentation/d/1awXiKMHabwdTwNF_oUuCkeEZmjDn3jOGj-KesDsXhEI/edit?usp=sharing"},
    "Recording": [] 
  },
  {
    "Display": true,
    "Date": "Oct 21",
-   "Topic": "Section 7: Lists and Recursion",
+   "Presentation Slides": "Section 7: Lists and Recursion",
    "Presentation": {"name": "slides", "link": "https://docs.google.com/presentation/d/1GyBSWuaQRtdTz6tDcuUJnixFpK5nC687q5Iucnif9as/edit?usp=sharing"},
    "Recording": [] 
  },
  {
    "Display":true,
    "Date": "Oct 7",
-   "Topic": "Section 5: Advanced Table Operations",
+   "Presentation Slides": "Section 5: Advanced Table Operations",
    "Presentation": {"name": "slides", "link": "https://docs.google.com/presentation/d/1Km1nR27pFV_Neq0Dj1dc0CuLc8Nnz1RtXF3pSyfR-fE/edit?usp=sharing"},
    "Recording": []
  },
  {
    "Display": true,
    "Date": "Sep 30",
-   "Topic": "Section 4: Table Operations",
+   "Presentation Slides": "Section 4: Table Operations",
    "Presentation": {"name": "slides", "link": "https://docs.google.com/presentation/d/1g-thKiB-1I5sAapP0Y6JZW-r5xzKvO0hDHcVqdKmIGo/edit?usp=sharing"},
    "Recording": []
  },
  {
   "Display": true,
   "Date": "Sept 23",
-  "Topic": "Section 3: Examples and Directory",
+  "Presentation Slides": "Section 3: Examples and Directory",
   "Presentation": {"name": "slides", "link": "https://docs.google.com/presentation/d/1PspvXfVEdMK73xdeMRgT5EiO8QNSeNmgGEc2b3_OwKg/edit?usp=sharing"},
   "Recording": []
  },
  {
   "Display": true,
   "Date": "Sept 16",
-  "Topic": "Section 2: Functions and Conditionals",
+  "Presentation Slides": "Section 2: Functions and Conditionals",
   "Presentation": {"name": "slides", "link": "https://docs.google.com/presentation/d/1GkQOj_t9m-NTlN70Yc1L_oNjZNDbkKXReGbyf6hN9GY/edit?usp=sharing"},
   "Recording": []
  },
  {
    "Display": true,
    "Date": "Sept 9",
-   "Topic": "Section 1: Basic Programs and Expressions",
+   "Presentation Slides": "Section 1: Basic Programs and Expressions",
    "Presentation": {"name": "slides", "link": "https://docs.google.com/presentation/d/1V2QWGgdmBv3Nl2rkLDkxiFqTM-MXLZZEv3qhzyUdFOM/edit?usp=sharing"},
    "Recording": []
  }

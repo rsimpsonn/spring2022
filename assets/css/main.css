@@ -277,7 +277,7 @@ a:hover {
     padding: 2%;
     position: relative;
     border-radius: 8px;
-    border: 2px solid rgba(179, 4, 94, 1);
+    /*border: 2px solid rgba(179, 4, 94, 1);*/
 }
 
 @media (min-width: 786px) {
@@ -511,4 +511,63 @@ p {
 
 a:visited, a:active, a:focus {
     text-decoration: none;
+}
+
+
+/* NEW CSS */
+
+@media (min-width: 786px) {
+    .lectures-container {
+        width:  70%;
+        padding: 10px;
+    }
+
+    .sections-container {
+        width:  30%;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 786px) {
+    .lectures-container {
+        width:  100%;
+        padding: 10px;
+    }
+
+    .sections-container {
+        width:  100%;
+        padding: 10px;
+    }
+}
+
+i {
+    margin: 2px;
+}
+
+.subtext {
+    font-size: 12px;
+    color:  #454545;
+    margin-top: 8px;
+}
+
+.filter {
+    border-radius: 2px;
+    margin: 5px;
+    padding: 5px;
+    background-color: purple;
+    cursor: pointer;
+}
+
+.filter:hover {
+    background-color: green;
+}
+
+.clear-filters {
+    font-style: italic;
+    cursor: pointer;
+    opacity: 0.75;
+}
+
+.clicked {
+    background-color: blue;
 }
