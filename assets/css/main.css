@@ -1,10 +1,19 @@
+
+/* GLOBAL VARIABLES */
+:root {
+    --main-background-color: #120329; /* choices: #b7befa, #120329 */
+    --alt-background-color: #b7befa;
+    --text-color: white; /* choices: black, white, #130E48, #270e48 */ 
+}
+
+
 body {
-    background-color: rgba(18, 3, 41, 1);
+    background-color: var(--main-background-color);
     height: 100%;
     font-family: 'Raleway', sans-serif;
     font-size: 18px;
-    color: white;
-    background-image: url("../img/galaxy-1.jpg");
+    color: var(--text-color);
+    /* background-image: url("../img/galaxy-1.jpg"); */
 }
 
 table {
@@ -65,7 +74,7 @@ a.nav-button:hover {
     /* border-bottom: solid 0.25em #3b0d02  !important; */
 }
 h1, h2, h3 {
-    font-family: 'Orbitron', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 h1 {
     font-size: 30px;
@@ -126,12 +135,22 @@ a:hover {
 }
 
 #content-wrapper {
+    --vertical-padding: 5%;
+    --horizontal-margin: 5%;
     min-height: 800px;
-    padding-top: 10%;
-    margin-left: 15%;
-    margin-right: 15%;
-    margin-bottom: 5%;
+    padding-top: var(--vertical-padding);
+    padding-bottom: var(--vertical-padding);
+    margin-left: var(--horizontal-margin);
+    margin-right: var(--horizontal-margin);
 }
+
+/* HOMEPAGE */
+
+#title {
+    text-align: center;
+    font-size:100px;
+}
+
 
 .menu-button {
     display: none;
@@ -258,26 +277,41 @@ a:hover {
     }
 }
 
-.ferret {
-  max-width: 350px;
-  margin: auto;
-  transform: rotate(30deg)
-}
-
-.ferret-wrapper {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
 .content {
     min-height: 100%;
     margin-left: 1% auto;
     margin-right: 1% auto;
-    background-color: rgba(26, 5, 59, .94); /*Outer Content Box*/
+    /* background-color: rgba(26, 5, 59, .94); /* Outer Content Box */
     padding: 2%;
     position: relative;
     border-radius: 8px;
-    /*border: 2px solid rgba(179, 4, 94, 1);*/
+    /* border: 2px solid rgba(179, 4, 94, 1); */
+}
+
+
+/* HOMEPAGE */
+
+#flex-container {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+
+#content-top {
+    padding-left:10%;
+    padding-right:10%;
+    margin-bottom: 5%;
+    text-align: center;
+}
+
+#content-top h1 {
+    font-size: 40%;
+}
+
+#content-top p {
+    text-align: center;
 }
 
 @media (min-width: 786px) {
