@@ -374,6 +374,14 @@ a:hover {
     text-align: center;
 }
 
+#lab-header-wrapper {
+    text-align: center;
+}
+
+#lab-schedule {
+    text-align: center;
+}
+
 #calendar-container {
     height: 100%;
     margin-top: auto;
