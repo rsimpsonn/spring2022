@@ -328,17 +328,46 @@ a:hover {
 
 .grid-container {
     display:grid;
+    /* Possible template arrangement */
+    /*
+    grid-template-areas: 
+        "assignments assignments assignments"
+        "feedback calendar links";
+    grid-template-columns: 1fr 1fr 1fr;
+    */
+    
+    grid-template-areas: 
+        "assignments assignments assignments"
+        "feedback calendar links";
+    grid-template-columns: 1fr 1fr 1fr;
+   
+
+    /* grid-template-areas: 
+        "assignments calendar"
+        "feedback calendar"
+        "links links";
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr; */
+
     column-gap: 30px;
     row-gap: 30px;
-    grid-template-areas: 
-        "assignments assignments hours" 
-        "shoutout feedback links";
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 2fr 1fr;
 }
 
 #current-assignments {
     grid-area: assignments;
+    min-width: 70%;
+}
+
+#hours-schedule {
+    grid-area: calendar;
+}
+
+#feedback {
+    grid-area: feedback;
+}
+
+#quick-links {
+    grid-area: links;
 }
 
 #current-assignments a {
