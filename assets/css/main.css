@@ -3,17 +3,19 @@
 :root {
     --main-background-color: #120329; /* choices: #b7befa, #120329 */
     --alt-background-color: #b7befa;
-    --text-color: white; /* choices: black, white, #130E48, #270e48 */ 
+    --text-color: black; /* choices: black, white, #130E48, #270e48 */ 
+    --site-font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", 
+    Helvetica, Arial, "Lucida Grande", sans-serif;
 }
-
 
 body {
     background-color: var(--main-background-color);
     height: 100%;
-    font-family: 'Raleway', sans-serif;
+    /* font-family: 'Raleway', sans-serif; */
+    font-family: var(--site-font-family);
     font-size: 18px;
     color: var(--text-color);
-    /* background-image: url("../img/galaxy-1.jpg"); */
+    background-image: url('../img/windows-2000-background.jpg')
 }
 
 table {
@@ -21,22 +23,6 @@ table {
       /* overflow-x: auto; 
       display: block;*/
     }
-
-/* .quick-links {
-    font-size: 0.85em;
-  	border-radius: 0.25em;
-  	border: solid 1px rgba(161, 198, 255, 1);
-  	width: 25%;
-  	padding: 0.75em;
-  	min-width: 200px;
-    margin: 2em auto;
-    background-color: rgba(31, 109, 173, 1);
-    color: white !important;
-}
-
-a.quick-links-link {
-    color: white !important;
-} */
 
 img.staff-pic {
     background-color: white;
@@ -98,6 +84,7 @@ h4 {
 }
 
 header {
+    text-align: center;
     font-weight: bolder;
     color: #F4E878;
     font-size: 20px;
@@ -150,11 +137,69 @@ a:hover {
 
 /* HOMEPAGE */
 
+.window {
+    color: black;
+    background-color: silver;
+    box-shadow: 1px 1px 0 black;
+    border-left: 1px solid #fff;
+    border-top: 1px solid #fff;
+    border-right: 1px solid #848484;
+    border-bottom: 1px solid #848484;
+    display: flex;
+    flex-direction: column;
+}
+
+.window-top-bar {
+    border-top: 1px solid white;
+    border-bottom: 1px solid black;
+    background: linear-gradient(to right,#0b2282,#237dc5);
+}
+
+.window-label {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    padding: 4px 1em;
+}
+
+.window-x {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.window-toolbar {
+    padding: 4px 1em;
+    border-bottom: 1px solid gray;
+    box-shadow: 0 1px black;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.window-toolbar>span {
+    margin-right: 10px;
+}
+
+.window-content {
+    padding: 1em;
+    background: gray;
+    flex-grow: 1;
+}
+
+
 #title {
     text-align: center;
     font-size:100px;
 }
 
+#title-img {
+    width:100%;
+}
+
+#title>h1 {
+    margin-top: 0;
+}
 
 .menu-button {
     display: none;
@@ -286,7 +331,7 @@ a:hover {
     margin-left: 1% auto;
     margin-right: 1% auto;
     /* background-color: rgba(26, 5, 59, .94); /* Outer Content Box */
-    padding: 2%;
+    padding: 5%;
     position: relative;
     border-radius: 8px;
     /* border: 2px solid rgba(179, 4, 94, 1); */
@@ -295,10 +340,14 @@ a:hover {
 
 /* HOMEPAGE */
 
+#homepage-content {
+    padding: 50px 0 0 0;
+}
+
 #content-top {
-    padding-left:10%;
-    padding-right:10%;
-    margin-bottom: 2%;
+    /* margin-left: 10%;
+    margin-right: 10%; */
+    /* margin-bottom: 2%; */
     text-align: center;
 }
 
@@ -321,36 +370,26 @@ a:hover {
 }
 
 #about:hover .hidden-p {
-    max-height: 200px;
+    /* max-height: 200px;
     opacity: 100;
-    transition: max-height 2s ease-in;
+    transition: max-height 2s ease-in; */
 }
 
 .grid-container {
     display:grid;
     /* Possible template arrangement */
-    /*
     grid-template-areas: 
-        "assignments assignments assignments"
-        "feedback calendar links";
+        "assignments assignments calendar"
+        "feedback links links";
     grid-template-columns: 1fr 1fr 1fr;
-    */
-    
-    grid-template-areas: 
-        "assignments assignments assignments"
-        "feedback calendar links";
-    grid-template-columns: 1fr 1fr 1fr;
-   
+    column-gap: 50px;
+    row-gap: 50px;
+}
 
-    /* grid-template-areas: 
-        "assignments calendar"
-        "feedback calendar"
-        "links links";
-    grid-template-columns: 3fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr; */
-
-    column-gap: 30px;
-    row-gap: 30px;
+@media (max-width: 786px) {
+    /* .grid-container {
+        grid-template-areas: ;
+    } */
 }
 
 #current-assignments {
@@ -362,23 +401,45 @@ a:hover {
     grid-area: calendar;
 }
 
+#calendar-container {
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
 #feedback {
     grid-area: feedback;
+}
+
+.centered {
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 #quick-links {
     grid-area: links;
 }
 
+#quick-links-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: auto;
+    height: 100%;
+}
+
+#quick-links-container>.col-flex {
+    justify-content: space-around;
+}
+
+#quick-links button {
+    width: 100%;
+}
+
 #current-assignments a {
     color: black;
     text-decoration: underline;
-}
-
-.grid-container>div {
-    padding: 15px;
-    border-radius: 20px;
-    background-color: #393885;
 }
 
 .col-flex {
@@ -397,47 +458,6 @@ a:hover {
     padding: 10px 15px;
     display:flex;
     justify-content: space-between;
-}
-
-#hours-schedule {
-    text-align: center;
-}
-
-#calendar-container {
-    height: 100%;
-    margin-top: auto;
-    margin-bottom: auto;
-}
-
-#quick-links {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 20% 80%;
-}
-
-#quick-links-container>div {
-    justify-content: center;
-    text-align: center
-}
-
-#quick-links a {
-    font-size: 0.75em;
-    border-radius: 0.25em;
-    border: solid 1px rgba(161, 198, 255, 1);
-    width: 80%;
-    padding: 0.5em;
-    min-width: 100px;
-    margin: auto;
-    background-color: rgba(31, 109, 173, 1);
-    color: white !important;
-}
-
-#quick-links-image {
-    margin-top: auto;
-    margin-bottom: auto;
-    width: 20%;
-    height: 60%;
-    background-color: white;
 }
 
 @media (min-width: 786px) {

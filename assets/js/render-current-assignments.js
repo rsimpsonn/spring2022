@@ -91,7 +91,9 @@ function renderAssignmentHelper(domElementId, currentAssignment) {
     assignmentTitle = document.createElement('strong')
     assignmentTitle.innerHTML = currentAssignment['Assignment']['name']
     assignmentLink.appendChild(assignmentTitle)
-    assignmentDue = document.createTextNode("Due " + currentAssignment['In'])
+    assignmentDue = document.createElement('strong')
+    assignmentDue.innerHTML = currentAssignment['In']
+    // assignmentDue = document.createTextNode("Due " + currentAssignment['In'])
     assignmentDiv.appendChild(assignmentLink)
     assignmentDiv.appendChild(assignmentDue)
 }

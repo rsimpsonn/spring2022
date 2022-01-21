@@ -59,88 +59,175 @@
     <!--Content-->
     <main id="main" role="main">
       <div id="content-wrapper">
-		<div class="content">
+		<div class="content" id="homepage-content">
 			<div id="content-top">
 				<div id="title">
-					<h1>Welcome to CSCI 0111 - Computing Foundations: Data!</h1>
+					<!-- https://www.makewordart.com/ -->
+					<img id="title-img" src="assets/img/title-wordart.png">
+					
 					<h3>MWF 10:00-10:50 AM EST, Metcalf Auditorium</h3>
 				</div>
 				<div id="about">
 					<article>
 						<p>CSCI 0111 is an introductory course for both concentrators and non-concentrators who want to understand computing through the lens of data. It covers the fundamentals needed for additional CS courses, while also being designed as a useful stopping point for students who want to use a bit of computing, data analysis, or programming in other disciplines.</p>   
+<!-- 						
 						<p class="hidden-p">The course starts with writing small programs to process and manage table-shaped data (like CSV files). It then progresses to problems involving structured (text-based) data for which tables aren't the best organization (introducing common computer science data structures). Throughout the course, we examine practical questions about working with realistic data, as well as the (often adverse) social impacts that can arise when using data at scale.</p>
 						<p class="hidden-p">The course expects no prior programming experience. It is paced more gently than CSCI 0150 or CSCI 0170 (which also assume no prior experience), while also focusing on styles of programming that are in common practice across many disciplines. The course uses two programming languages (initially Pyret and later Python), with the first explicitly designed to transition into the second. </p>
 						<p class="hidden-p">Students from concentrations across campus have succeeded in and enjoyed CSCI 0111. Check out the <a href="https://thecriticalreview.org/search/CSCI/0111/Fall-2020/1">Critical Review</a> [Brown access only] (Professor Fisler last led the course in Spring 2020; she and Professor Woos co-taught in Fall 2020, with Professor Woos running lectures).
-						<hr>
+						 -->
 					</article>
 				</div>
 			</div>
+
+
+			<!-- Window Template -->
+
+			<!-- <div class="window">
+				<div class="window-top-bar">
+					<div class="window-label">
+						<span>Name of Window</span>
+						<img class="window-x" src="assets/img/windows-x.png">
+					</div>
+				</div>
+				<div class="window-toolbar">
+					<span><span class="underline">F</span>ile</span>
+					<span><span class="underline">H</span>elp</span>
+					<span><span class="underline">E</span>dit</span>
+					<span>I<span class="underline">n</span>sert</span>
+				</div>
+				<div class="window-content">
+					Window content
+				</div>
+			</div> -->
+
+
 			<div class="grid-container">
-				<div id="current-assignments" >
-					<header>What's out right now?</header>
-					<div class="col-flex">
-						<div>
-							<h4>Homework</h4>
-							<div class="assignment-container">
-								<div id="current-homework">
-									<strong>No homework out!</strong>
+				<div id="current-assignments" class="window">
+					<div class="window-top-bar">
+						<div class="window-label">
+							<span>What's out right now? - Current Assignments</span>
+							<img class="window-x" src="assets/img/windows-x.png">
+						</div>
+					</div>
+					<div class="window-toolbar">
+						<span><span class="underline">F</span>ile</span>
+						<span><span class="underline">H</span>elp</span>
+						<span><span class="underline">E</span>dit</span>
+						<span>I<span class="underline">n</span>sert</span>
+					</div>
+					<div class="window-content">
+						<div class="col-flex">
+							<div>
+								<h4>Homework</h4>
+								<div class="assignment-container">
+									<div id="current-homework">
+										<strong>No homework out!</strong>
+									</div>
 								</div>
 							</div>
-						</div>
-						<div>
-							<h4>Drill</h4>
-							<div class="assignment-container">
-								<div id="current-drill">
-									<strong>No drill out!</strong>
+							<div>
+								<h4>Drill</h4>
+								<div class="assignment-container">
+									<div id="current-drill">
+										<strong>No drill out!</strong>
+									</div>
 								</div>
 							</div>
-						</div>
-						<div>
-							<h4>Project</h4>
-							<div class="assignment-container">
-								<div id="current-project">
-									<strong>No project out!</strong>
-								</div>
-							</div>	
-						</div>
-						<div>
-							<h4>Lab</h4>
-							<div class="assignment-container">
-								<div id="current-lab">
-									<strong>No lab out!</strong>
+							<div>
+								<h4>Project</h4>
+								<div class="assignment-container">
+									<div id="current-project">
+										<strong>No project out!</strong>
+									</div>
+								</div>	
+							</div>
+							<div>
+								<h4>Lab</h4>
+								<div class="assignment-container">
+									<div id="current-lab">
+										<strong>No lab out!</strong>
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-				<div id="hours-schedule">
-					<header>Hours Schedule</header>
-					<div id="calendar-container">
+				<div class="window" id="hours-schedule">
+					<div class="window-top-bar">
+						<div class="window-label">
+							<span>Hours Coming Up! - Hours Schedule</span>
+							<img class="window-x" src="assets/img/windows-x.png">
+						</div>
+					</div>
+					<div class="window-toolbar">
+						<span><span class="underline">F</span>ile</span>
+						<span><span class="underline">H</span>elp</span>
+						<span><span class="underline">E</span>dit</span>
+						<span>I<span class="underline">n</span>sert</span>
+					</div>
+					<div class="window-content centered">
 						<!-- Will need to be adjust for smaller screens -->
 						<!-- embed settings: height:350, width:350, default:agenda, no border, none shown, -->
 						<iframe src="https://calendar.google.com/calendar/embed?height=400&wkst=1&bgcolor=%23ffffff&ctz=America%2FNew_York&showTitle=0&showNav=0&showDate=0&showCalendars=0&showTz=0&showTabs=0&showPrint=0&mode=AGENDA&src=Z3BpNzUwcDM0MmtiMGVhMHRpbWVhdGZlOTIyc3B0bjVAaW1wb3J0LmNhbGVuZGFyLmdvb2dsZS5jb20&color=%233F51B5" style="border-width:0" width="350" height="350" frameborder="0" scrolling="no"></iframe>
 						<!-- <iframe src="https://calendar.google.com/calendar/embed?height=350&wkst=1&bgcolor=%23ffffff&ctz=America%2FNew_York&showTitle=0&showDate=0&showNav=0&showPrint=0&showTabs=0&showTz=0&showCalendars=0&mode=AGENDA&src=Y185MnFrMWJlcnB1N2pnZGtvZDYya2FoczV2b0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=Y19jYWJ2YmhvM3ZkcmFpcmhtMmkzMmF0NzhuOEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%23F4511E&color=%23E4C441" style="border:solid 1px #777" width="400" height="350" frameborder="0" scrolling="no"></iframe>					 -->
 					</div>
 				</div>
-				<div id="feedback">
-					<header>Anonymous Feedback</header>
-					<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSd1cjOjhS2vhnmC2ju5BuhO-vmUEU5b925EIcKfi0vBgBRjgg/viewform?embedded=true" width="640" height="375" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+				<div class="window" id="feedback">
+					<div class="window-top-bar">
+						<div class="window-label">
+							<span>Feedback? - Anonymous Feedback</span>
+							<img class="window-x" src="assets/img/windows-x.png">
+						</div>
+					</div>
+					<div class="window-toolbar">
+						<span><span class="underline">F</span>ile</span>
+						<span><span class="underline">H</span>elp</span>
+						<span><span class="underline">E</span>dit</span>
+						<span>I<span class="underline">n</span>sert</span>
+					</div>
+					<div class="window-content centered">
+						<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSd1cjOjhS2vhnmC2ju5BuhO-vmUEU5b925EIcKfi0vBgBRjgg/viewform?embedded=true" width="400" height="250" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+					</div>
 				</div>
-				<div id="quick-links">
-					<header>Quick Links</header>
-					<div id="quick-links-container">
-						<div class="col-flex">
-							<a href="https://www.gradescope.com/">Gradescope</a>
-							<a href="https://hackmd.io/@cs111/syllabus-f21">Course Syllabus</a>
-							<a href="https://forms.gle/X1K9TA6w7XaD8U8C7">Feedback Form</a>
+				<div class="window" id="quick-links">
+					<div class="window-top-bar">
+						<div class="window-label">
+							<span>Get There Faster - Quick Links</span>
+							<img class="window-x" src="assets/img/windows-x.png">
 						</div>
-						<div id="quick-links-image">
-							
-						</div>
-						<div class="col-flex">
-							<a href="https://forms.gle/3s2T1TWqFpff4hdBA">Lab Switch From</a>
-							<a href="https://forms.gle/AfCHKU8vGLqrHWpNA">Blocklist Form</a>
-							<a href="https://hackmd.io/@cs111/cs200-bridge-2021">Going to CSCI 0200</a>
+					</div>
+					<div class="window-toolbar">
+						<span><span class="underline">F</span>ile</span>
+						<span><span class="underline">H</span>elp</span>
+						<span><span class="underline">E</span>dit</span>
+						<span>I<span class="underline">n</span>sert</span>
+					</div>
+					<div class="window-content">
+						<div id="quick-links-container">
+							<div class="col-flex">
+								<a href="https://www.gradescope.com/"><button>Gradescope</button></a>
+								<a href="https://www.gradescope.com/"><button>Gradescope</button></a>
+								<a href="https://www.gradescope.com/"><button>Gradescope</button></a>
+								<a href="https://www.gradescope.com/"><button>Gradescope</button></a>
+							</div>
+							<div class="col-flex">
+								<a href="https://www.gradescope.com/"><button>Gradescope</button></a>
+								<a href="https://www.gradescope.com/"><button>Gradescope</button></a>
+								<a href="https://www.gradescope.com/"><button>Gradescope</button></a>
+								<a href="https://www.gradescope.com/"><button>Gradescope</button></a>
+							</div>
+							<div class="col-flex">
+								<a href="https://www.gradescope.com/"><button>Gradescope</button></a>
+								<a href="https://www.gradescope.com/"><button>Gradescope</button></a>
+								<a href="https://www.gradescope.com/"><button>Gradescope</button></a>
+								<a href="https://www.gradescope.com/"><button>Gradescope</button></a>
+							</div>
+							<div class="col-flex">
+								<a href="https://www.gradescope.com/"><button>Gradescope</button></a>
+								<a href="https://www.gradescope.com/"><button>Gradescope</button></a>
+								<a href="https://www.gradescope.com/"><button>Gradescope</button></a>
+								<a href="https://www.gradescope.com/"><button>Gradescope</button></a>
+							</div>
 						</div>
 					</div>
 				</div>
