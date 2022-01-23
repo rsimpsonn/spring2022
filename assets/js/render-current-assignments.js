@@ -22,18 +22,6 @@ async function retrieveJson(filepath) {
     return data;
 }
 
-// Test to see if retrieving the JSON works on your end
-// retrieveJson('/assets/json/labs.json')
-// .then(data => {
-//     console.log("Successfully fetched JSON data")
-//     console.log(data)
-// })
-// .catch(error => {
-//     console.error(error);
-//     console.error(`If you are getting an error about the fetch URL being invalid, try running the site from a server
-//     e.g. python -m http.server from the terminal`);
-// })
-
 /**
  * Take the date format "mm/dd/yyyy" and convert it to a Javascript date
  * @param {String} date 
