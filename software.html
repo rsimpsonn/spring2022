@@ -50,36 +50,89 @@
 <!--Content-->
 <main id="main" role="main">
     <div id="content-wrapper">
+    <div class="centered-col">
+        <img src="assets/img/resourcespic.png" style="width: 300px; height: auto; margin-bottom: 10px">
+    </div>
     <div class="resource_header">
-        <h1>Resources</h1>
         <p>Here is a page where you can access different software and class resources to help you succeed. We will use two programming languages during this course: Pyret and Python. We’ll start in Pyret and switch to Python in November.</p>
     </div>
         <div class="row-wrapper">
-            <div class="left useful_links">
-                <p class="heading">Useful Documents</p>
-                <div id="quick-links-container">
-                    <div class="quick-links-2">
-                      <b>
-                        <a href="https://hackmd.io/@cs111/syllabus-f21"
-                        target="_blank"
-                        class="quick-links-link-2">Course Syllabus</a>
-                      </b>
-                    </div>
-                    <div class="quick-links-2">
-                      <b>
-                        <a
-                        href="going-to-200.html"
-                        class="quick-links-link-2">Going to CS 0200</a>
-                      </b>
-                    </div>
+            <div class="left">
+              <div class="window link-box" id="quick-links">
+                <div class="window-top-bar">
+                  <div class="window-label">
+                    <span>Get There Faster! - Quick Links</span>
+                    <img class="window-x" src="assets/img/windows-x.png">
+                  </div>
                 </div>
-                <p class="heading">Emails</p>
-                <p class="email">Professor Zizyte: <a href="mailto:milda_zizyte@brown.edu">milda_zizyte@brown.edu</a></p> 
-                <p class="email">HTAs: <a href="mailto:cs0111headtas@cs.brown.edu">cs0111headtas@cs.brown.edu</a></p>
+                <div class="window-toolbar">
+                  <span><span class="underline">F</span>ile</span>
+                  <span><span class="underline">H</span>elp</span>
+                  <span><span class="underline">E</span>dit</span>
+                  <span>I<span class="underline">n</span>sert</span>
+                </div>
+                <div class="window-content">
+                  <div id="quick-links-container" class="resources-quick-links">
+                    <div class="col-flex">
+                      <a href="https://www.gradescope.com/courses/357203"><button class="button-margin">Gradescope</button></a>
+                      <a href="https://edstem.org/us/courses/18932/discussion/"><button class="button-margin">EdStem</button></a>
+                      <a href="https://forms.gle/HZMNK4BtC8hQbsEj9"><button class="button-margin">Blocklist</button></a>
+                      <a href="https://hackmd.io/@cs111/cs200-bridge-2021"><button class="button-margin">Going to 200</button></a>
+                      <a href="https://forms.gle/S8uyRv7ABAjbU5yZA"><button class="button-margin">Lab Switch Form</button></a>
+                      <a href="https://hackmd.io/@cs111/syllabus-f21"
+                        target="_blank"
+                        class="quick-links-link-2"><button>Course Syllabus</button></a>
+                    </div>
+                  </div>
+                </div>
+                </div>
+                <div class="window link-box" id="quick-links">
+                  <div class="window-top-bar">
+                    <div class="window-label">
+                      <span> Contact the Staff </span>
+                      <img class="window-x" src="assets/img/windows-x.png">
+                    </div>
+                  </div>
+                  <div class="window-toolbar">
+                    <span><span class="underline">F</span>ile</span>
+                    <span><span class="underline">H</span>elp</span>
+                    <span><span class="underline">E</span>dit</span>
+                    <span>I<span class="underline">n</span>sert</span>
+                  </div>
+                  <div class="window-content-emails">
+                    <div class="email-box">
+                      <h2>Emails</h2>
+                      <p class="email">Professor Zizyte: <a href="mailto:milda_zizyte@brown.edu">milda_zizyte@brown.edu</a></p> 
+                      <p class="email">HTAs: <a href="mailto:cs0111headtas@cs.brown.edu">cs0111headtas@cs.brown.edu</a></p>  
+                    </div>
+                    <!-- <div id="quick-links-container">
+                      <div class="col-flex">
+                      </div>
+                    </div> -->
+                  </div>
+              </div>
             </div>
+
+
+
             <div class="right">
+              <div class="window link-box" id="quick-links">
+                <div class="window-top-bar">
+                  <div class="window-label">
+                    <span>Helpful Information</span>
+                    <img class="window-x" src="assets/img/windows-x.png">
+                  </div>
+                </div>
+                <div class="window-toolbar">
+                  <span><span class="underline">F</span>ile</span>
+                  <span><span class="underline">H</span>elp</span>
+                  <span><span class="underline">E</span>dit</span>
+                  <span>I<span class="underline">n</span>sert</span>
+                </div>
+                <div class="window-content">
                 <div class="resource_box">
                     <button class="collapsible button_format">Guide to Learning in CS0111<i class="fa fa-angle-down"></i></button>
+                    <div class="pad-text">
                     <h2>Learning in Lecture and Lab</h2>
 
                     <p>Lectures in the course will involve a fair bit of hands-on
@@ -260,15 +313,16 @@
                           now. That doesn’t mean that you can’t learn to do this
                           too. Work with the practice problems and the course
                           staff.</i></p>
+                        </div>
                     </div>
                     <div class="resource_box">
                         <button class="collapsible button_format">Where to Get Various Kinds of Help<i class="fa fa-angle-down"></i></button>
                             <ul id="where-to-get-help">
-                                <p><table>
+                                <table>
                                       <tr>
                                     <th><span>Problem</span></th>
                                     <th><span>Ed</span></th>
-                                    <th><span>Debugging </span><br><span> Hours</span><br><span>(SignMeUp)</span></th>
+                                    <th><span>Debugging </span><br><span> Hours</span><br></th>
                                     <th><span>Conceptual </span><br><span> Hours</span></th>
                                     <th><span>Professor Hours </span><br><span> or Appt</span></th>
                                     <!--<th><span>Workshop</span></th>-->
@@ -323,7 +377,7 @@
                                     <!--<td></td>-->
                                       </tr>
                                     </tbody>
-                                  </table></p>
+                                  </table>
 
                                   <p><span>Labs (required) run each week to practice
                                   programming material.</span></p>
@@ -444,10 +498,13 @@
                     </div>
                 </div>
             </div>
+            </div>
+            </div>
                   
             </div>
             </div>
         </div>
+      </div>
 </main>
     <!--Footer-->
     <footer role="contentinfo">

@@ -626,9 +626,8 @@ body {
 
 table {
   border-collapse: separate;
-  border-radius: 10px;
-  margin-bottom: 3em;
-  width: 100%;
+  margin-bottom: 2em;
+  width: 90%;
 }
 
 tbody {
@@ -663,12 +662,7 @@ th {
   text-align: left;
 }
 
-td:first-child {
-  border-radius: 10px 0 0 10px;
-}
-td:last-child {
-  border-radius: 0 10px 10px 0;
-}
+
 
 #staff-mega-wrapper {
   display: flex;
@@ -815,17 +809,25 @@ a:focus {
 }
 
 /*New CSS for Resources page*/
+
+.window-content-emails {
+  padding: 0em 1em 1em 1em;
+  background: white;
+  flex-grow: 1;
+}
+
 .resource_box {
-  padding: 10px;
-  border: 2px solid rgba(179, 4, 94, 1);
-  color: #fffac9;
-  background-color: rgba(57, 56, 133, 0.5);
-  border-radius: 15px;
-  margin: 0px 10px 10px;
+  background-color:  #EFEFEF;
+  margin: 10px 10px 10px;
   max-height: 0;
   min-height: 60px;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
+  border-bottom: black;
+}
+
+.resource_box>p{
+  padding: 10px
 }
 
 .collapsible {
@@ -834,16 +836,22 @@ a:focus {
   width: 100%;
   border: none;
   text-align: left;
+  margin: 0px 0px 0px 0px;
   outline: none;
   font-size: 15px;
 }
 
 .button_format {
-  color: #fffac9;
-  background-color: transparent;
+  color: black;
+  background-color: silver;
+  box-shadow: 1px 1px 0 black;
   font-size: 25px;
   max-height: 0;
-  min-height: 50px;
+  min-height: 59px;
+  margin: 0px 0px 10px 0px;
+  padding-top: 10px;
+  padding-left: 10px;
+  text-align: center;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
   display: flex;
@@ -859,13 +867,35 @@ a:focus {
   margin: 0px 10px 10px;
 }
 
+.link-box{
+  margin: 0px 10px 10px 10px;
+}
+
+.button_margin{
+  margin: 10px;
+}
+
+.resources-quick-links>.col-flex {
+  row-gap: 10px;
+}
+
+.pad-text{
+  padding: 20px;
+}
+
+
 @media (min-width: 786px) {
   .left {
-    width: 25%;
+    width: 23%;
+  }
+
+  .email-box{
+    font-size:80% !important;
+    word-break: break-word;
   }
 
   .right {
-    width: 70%;
+    width: 75%;
   }
 
   .lectures-container {
@@ -878,11 +908,26 @@ a:focus {
     width: 30%;
     margin-top: 10px;
   }
+
+  .resources-quick-links button {
+    height: 30px;
+    width: 200px;
+    text-overflow: ellipsis;
+  }
 }
 
 @media (max-width: 786px) {
   .left {
     width: 100%;
+  }
+
+  .resources-quick-links button {
+    height: 30px;
+    width: 200px;
+  }
+
+  .email-box{
+    font-size:100% !important;
   }
 
   .right {
