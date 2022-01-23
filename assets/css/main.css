@@ -14,7 +14,17 @@ body {
     font-family: var(--site-font-family);
     font-size: 18px;
     color: var(--text-color);
-    background-image: url('../img/windows-background.png')
+    background-image: url('../img/windows-another-background.png')
+}
+
+.banner {
+    width:  100%;
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 20px 80px 10px;
+    margin-bottom: 20px;
+    margin-top: 40px;
+    text-align: center;
+    position: relative;
 }
 
 table {
@@ -220,7 +230,11 @@ button {
 }
 
 #title-img {
-  width: 100%;
+  width: 80%;
+  position: absolute;
+  top: -15%;
+  left: 10%;
+
 }
 
 .menu-button {
@@ -351,7 +365,7 @@ button {
   min-height: 100%;
   margin-left: 1% auto;
   margin-right: 1% auto;
-  padding: 5%;
+  padding: 0 5% 5%;
   position: relative;
   border-radius: 8px;
 }
@@ -471,6 +485,13 @@ button {
 .col-flex {
   display: flex;
   flex-direction: column;
+}
+
+.centered-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
 }
 
 .assignment-container {
@@ -604,11 +625,8 @@ body {
 }
 
 table {
-  background-color: rgba(26, 5, 59, 0.94);
   border-collapse: separate;
-  border-spacing: 0px 10px;
   border-radius: 10px;
-  padding: 10px;
   margin-bottom: 3em;
   width: 100%;
 }
@@ -633,8 +651,8 @@ table a {
 }
 
 th {
-  background-color: rgba(26, 5, 59, 1);
-  color: white;
+  background-color: #EFEFEF;
+  color: black;
   font-weight: bold;
 }
 
@@ -852,12 +870,13 @@ a:focus {
 
   .lectures-container {
     width: 70%;
-    padding: 10px;
+    margin-top: 10px;
+    padding-right:  10px;
   }
 
   .sections-container {
     width: 30%;
-    padding: 10px;
+    margin-top: 10px;
   }
 }
 
@@ -925,12 +944,11 @@ i {
   border-radius: 2px;
   margin: 5px;
   padding: 5px;
-  background-color: purple;
   cursor: pointer;
 }
 
 .filter:hover {
-  background-color: green;
+  background-color: #A1A1A1;
 }
 
 .clear-filters {
@@ -940,5 +958,5 @@ i {
 }
 
 .clicked {
-  background-color: blue;
+  background-color: #A1A1A1;
 }
