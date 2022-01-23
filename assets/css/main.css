@@ -142,6 +142,10 @@ button {
 
 /* WINDOWS 2000 STYLE CONTAINERS */
 
+.hidden {
+    display: none;
+}
+
 .window {
     color: black;
     background-color: silver;
