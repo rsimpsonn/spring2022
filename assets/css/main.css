@@ -528,6 +528,7 @@ button {
 }
 
 #labs-flex {
+    /* flex-wrap: wrap when width is smaller than 786px*/
     display: flex;
     justify-content: space-between;
     column-gap: 10px;
@@ -545,17 +546,6 @@ button {
 #labs-info p {
     text-align: center;
     font-weight: normal;
-}
-
-#lab-switch {
-    text-align: center;
-    color: black;
-}
-
-a.lab-switch-button {
-    border-radius: 30px;
-    background-color: rgb(136, 115, 160);
-    color: yellow;
 }
 
 #header-pic {
@@ -636,7 +626,6 @@ th {
 td,
 th {
     padding: 6px;
-    /*border: 1px solid #ccc;*/
     text-align: left;
 }
 
