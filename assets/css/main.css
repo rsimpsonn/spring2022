@@ -15,7 +15,7 @@ body {
     font-family: var(--site-font-family);
     font-size: 18px;
     color: var(--text-color);
-    background-image: url('../img/windows-2000-background.jpg')
+    background-image: url('../img/windows-background.png')
 }
 
 table {
@@ -30,36 +30,46 @@ img.staff-pic {
 
 a.nav-button {
     border-bottom: none !important;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     cursor: pointer;
 }
 
 a.active {
-    border-bottom: solid 0.25em rgba(179, 4, 94, 1) !important;
+    color: white;
+    opacity: 1;
+    
 }
 
 a.active:hover {
-    border-bottom: solid 0.25em #194175  !important;
     cursor: pointer;
+    opacity: 1;
 }
 
 .nav-button {
     padding: 10px 20px;
     display: inline-block;
     text-align: center;
-    color: white !important;
     cursor: pointer;
+    text-shadow: 0px 0px 10px #fff;
+    color: black;
+    font-family: 'HelveticaNeue-Light', sans-serif;
 }
 
 a.nav-button:hover {
-    color: rgba(161, 198, 255, 1) !important;
+    text-decoration: underline;
     /* background-color: #b57713 !important;  The color doesn't look great*/
-    border-bottom: solid 0.25em rgba(161, 198, 255, 1)  !important;
+    /*border-bottom: solid 0.25em rgba(161, 198, 255, 1)  !important;*/
     cursor: pointer;
     /* border-bottom: solid 0.25em #3b0d02  !important; */
+    opacity: 1 !important;
+}
+
+.nav-button-center {
+    display: flex;
+    align-items: center;
 }
 h1, h2, h3, h4 {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 h1 {
     font-size: 30px;
@@ -124,7 +134,7 @@ a:hover {
     --vertical-padding: 5%;
     --horizontal-margin: 5%;
     min-height: 800px;
-    padding-top: 5%;
+    padding-top: 0;
     padding-bottom: 5%;
     margin-left: 5%;
     margin-right: 5%;
@@ -191,7 +201,7 @@ button {
 
 .window-content {
     padding: 1em;
-    background: gray;
+    background: white;
     flex-grow: 1;
 }
 
@@ -344,7 +354,7 @@ button {
 
 /* HOMEPAGE */
 #homepage-content {
-    padding: 50px 0 0 0;
+    padding: 0;
 }
 
 #content-top {
@@ -379,9 +389,9 @@ button {
     display:grid;
     /* Possible template arrangement */
     grid-template-areas: 
-        "assignments assignments calendar"
-        "feedback links links";
-    grid-template-columns: 1fr 1fr 1fr;
+        "assignments assignments assignments links"
+        "feedback feedback calendar calendar";
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     column-gap: 50px;
     row-gap: 50px;
 }
@@ -461,14 +471,11 @@ button {
 }
 
 .assignment-container {
-    border-radius: 10px;
-    background-color: #D7D4FBC9;
     color: black;
 }
 
 .assignment-container>div {
     font-size: 15px;
-    padding: 10px 15px;
     display:flex;
     justify-content: space-between;
 }
@@ -514,15 +521,12 @@ body {
 }
 
 #nav-wrapper {
-    position: fixed;
     align-items: center;
     display: flex;
     justify-content: space-around;
     min-height: 40px;
     width: 100%;
-    background-color: rgba(26, 5, 59, .94);
-    z-index: 9999;
-    border-bottom: solid 0.1em black;
+    color: black;
 }
 
 .fa.fa-bars {

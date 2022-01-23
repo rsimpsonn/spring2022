@@ -12,11 +12,13 @@
       <link rel="stylesheet" href="assets/css/main.css">
       <link href="https://fonts.googleapis.com/css2?family=Lato&family=Noto+Serif&display=swap" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet">
-      <link href="https://fonts.googleapis.com/css?family=Cookie%7CEB+Garamond%7CMarkazi+Text%7CRoboto:400,900%7CKarla:400,700%7COpen+Sans" rel="stylesheet">
       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Orbitron&family=Raleway&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+				<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+				<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,500;0,600;0,700;1,300;1,400;1,500&display=swap" rel="stylesheet">
   </head>
 
   <body>
@@ -33,16 +35,13 @@
 	    <nav role="navigation">
               <div id="nav-wrapper">
 		<div id="sidebar">
-		  <div id="index-nav"><a href="index.html" class="nav-button active">CS111</a></div>
-		  <div id="Lectures-nav"><a href="lectures.html" class="nav-button">Lectures</a></div>
-		  <div id="assignments-nav"><a href="assignments.html" class="nav-button">Assignments</a></div>
-		  <div id="Sections-nav"><a href="labs.html" class="nav-button">Labs</a></div>
-		  <div id="Sections-nav"><a href="learning.html" class="nav-button">Learning</a></div>
-		  <div id="documents-nav"><a href="documents.html" class="nav-button">Resources</a></div>
-		  <div id="software-nav"><a href="software.html" class="nav-button">Software</a></div>
-		  <div id="Calendar-nav"><a href="calendar.html" class="nav-button">Calendar</a></div>
-		  <div id="Staff-nav"><a href="staff.html" class="nav-button">Staff</a></div>
-		  <div id="Piazza-nav"><a href="https://edstem.org/us/courses/12806/discussion/" target="_blank" class="nav-button">Edstem</a></div>
+		  <div id="Lectures-nav" class="nav-button-center"><a href="lectures.html" class="nav-button">Lectures</a></div>
+		  <div id="assignments-nav" class="nav-button-center"><a href="assignments.html" class="nav-button">Assignments</a></div>
+		  <div id="Sections-nav" class="nav-button-center"><a href="labs.html" class="nav-button">Labs</a></div>
+		  <div id="index-nav" ><a href="index.html" class="nav-button active"><img src="assets/img/cs111-internet.png" style="width: 180px; height: auto"></a></div>
+		  <div id="software-nav" class="nav-button-center"><a href="software.html" class="nav-button">Resources</a></div>
+		  <div id="Calendar-nav" class="nav-button-center"><a href="calendar.html" class="nav-button">Calendar</a></div>
+		  <div id="Staff-nav" class="nav-button-center"><a href="staff.html" class="nav-button">Staff</a></div>
 		</div>
 		<div class="menu-button">
 		  <div class="line1"></div>
@@ -116,37 +115,45 @@
 						<span>I<span class="underline">n</span>sert</span>
 					</div>
 					<div class="window-content">
-						<div class="col-flex">
-							<div>
-								<h4>Homework</h4>
-								<div class="assignment-container">
+						<div class="col-flex" style="height: 100%; justify-content: space-between; padding: 5px 0">
+								<div class="row-wrapper" style="width: 100%" >
+									<img src="/assets/img/notebook-icon.png" style="width: 50px; height: auto;">
+									<div style="display: flex; flex-direction: column; flex-grow: 100; margin-left: 5px"><h4 style="margin: 0; margin-top: 5px">Homework</h4>
+										<div class="assignment-container">
 									<div id="current-homework">
 										<strong>No homework out!</strong>
 									</div>
 								</div>
+								</div>
 							</div>
-							<div>
-								<h4>Drill</h4>
-								<div class="assignment-container">
+							<div class="row-wrapper" style="width: 100%" >
+									<img src="/assets/img/folder-icon.png" style="width: 50px; height: auto;">
+									<div style="display: flex; flex-direction: column; flex-grow: 100; margin-left: 5px"><h4 style="margin: 0; margin-top: 5px">Drill</h4>
+										<div class="assignment-container">
 									<div id="current-drill">
 										<strong>No drill out!</strong>
 									</div>
 								</div>
+								</div>
 							</div>
-							<div>
-								<h4>Project</h4>
-								<div class="assignment-container">
-									<div id="current-project">
+							<div class="row-wrapper" style="width: 100%" >
+									<img src="/assets/img/paint-icon.png" style="width: 50px; height: auto;">
+									<div style="display: flex; flex-direction: column; flex-grow: 100; margin-left: 5px"><h4 style="margin: 0; margin-top: 5px">Project</h4>
+										<div class="assignment-container">
+									<div id="current-homework">
 										<strong>No project out!</strong>
 									</div>
-								</div>	
+								</div>
+								</div>
 							</div>
-							<div>
-								<h4>Lab</h4>
-								<div class="assignment-container">
+							<div class="row-wrapper" style="width: 100%" >
+									<img src="/assets/img/lab-notebook-icon.png" style="width: 50px; height: auto;">
+									<div style="display: flex; flex-direction: column; flex-grow: 100; margin-left: 5px"><h4 style="margin: 0; margin-top: 5px">Lab</h4>
+										<div class="assignment-container">
 									<div id="current-lab">
 										<strong>No lab out!</strong>
 									</div>
+								</div>
 								</div>
 							</div>
 						</div>
@@ -168,7 +175,7 @@
 					<div class="window-content centered">
 						<!-- Will need to be adjust for smaller screens -->
 						<!-- embed settings: height:350, width:350, default:agenda, no border, none shown, -->
-						<iframe src="https://calendar.google.com/calendar/embed?height=400&wkst=1&bgcolor=%23ffffff&ctz=America%2FNew_York&showTitle=0&showNav=0&showDate=0&showCalendars=0&showTz=0&showTabs=0&showPrint=0&mode=AGENDA&src=Z3BpNzUwcDM0MmtiMGVhMHRpbWVhdGZlOTIyc3B0bjVAaW1wb3J0LmNhbGVuZGFyLmdvb2dsZS5jb20&color=%233F51B5" style="border-width:0" width="350" height="350" frameborder="0" scrolling="no"></iframe>
+						<iframe src="https://calendar.google.com/calendar/embed?height=400&wkst=1&bgcolor=%23ffffff&ctz=America%2FNew_York&showTitle=0&showNav=0&showDate=0&showCalendars=0&showTz=0&showTabs=0&showPrint=0&mode=AGENDA&src=Z3BpNzUwcDM0MmtiMGVhMHRpbWVhdGZlOTIyc3B0bjVAaW1wb3J0LmNhbGVuZGFyLmdvb2dsZS5jb20&color=%233F51B5" style="border-width:0" width="350" height="400" frameborder="0" scrolling="no"></iframe>
 						<!-- <iframe src="https://calendar.google.com/calendar/embed?height=350&wkst=1&bgcolor=%23ffffff&ctz=America%2FNew_York&showTitle=0&showDate=0&showNav=0&showPrint=0&showTabs=0&showTz=0&showCalendars=0&mode=AGENDA&src=Y185MnFrMWJlcnB1N2pnZGtvZDYya2FoczV2b0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=Y19jYWJ2YmhvM3ZkcmFpcmhtMmkzMmF0NzhuOEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%23F4511E&color=%23E4C441" style="border:solid 1px #777" width="400" height="350" frameborder="0" scrolling="no"></iframe>					 -->
 					</div>
 				</div>
@@ -186,7 +193,7 @@
 						<span>I<span class="underline">n</span>sert</span>
 					</div>
 					<div class="window-content centered">
-						<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSd1cjOjhS2vhnmC2ju5BuhO-vmUEU5b925EIcKfi0vBgBRjgg/viewform?embedded=true" width="400" height="250" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+						<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSd1cjOjhS2vhnmC2ju5BuhO-vmUEU5b925EIcKfi0vBgBRjgg/viewform?embedded=true" width="400" height="400" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
 					</div>
 				</div>
 				<div class="window" id="quick-links">
@@ -205,28 +212,11 @@
 					<div class="window-content">
 						<div id="quick-links-container">
 							<div class="col-flex">
-								<a href="https://www.gradescope.com/"><button>Gradescope</button></a>
-								<a href="https://www.gradescope.com/"><button>Gradescope</button></a>
-								<a href="https://www.gradescope.com/"><button>Gradescope</button></a>
-								<a href="https://www.gradescope.com/"><button>Gradescope</button></a>
-							</div>
-							<div class="col-flex">
-								<a href="https://www.gradescope.com/"><button>Gradescope</button></a>
-								<a href="https://www.gradescope.com/"><button>Gradescope</button></a>
-								<a href="https://www.gradescope.com/"><button>Gradescope</button></a>
-								<a href="https://www.gradescope.com/"><button>Gradescope</button></a>
-							</div>
-							<div class="col-flex">
-								<a href="https://www.gradescope.com/"><button>Gradescope</button></a>
-								<a href="https://www.gradescope.com/"><button>Gradescope</button></a>
-								<a href="https://www.gradescope.com/"><button>Gradescope</button></a>
-								<a href="https://www.gradescope.com/"><button>Gradescope</button></a>
-							</div>
-							<div class="col-flex">
-								<a href="https://www.gradescope.com/"><button>Gradescope</button></a>
-								<a href="https://www.gradescope.com/"><button>Gradescope</button></a>
-								<a href="https://www.gradescope.com/"><button>Gradescope</button></a>
-								<a href="https://www.gradescope.com/"><button>Gradescope</button></a>
+								<a href="https://www.gradescope.com/courses/357203"><button>Gradescope</button></a>
+								<a href="https://edstem.org/us/courses/18932/discussion/"><button>EdStem</button></a>
+								<a href="https://forms.gle/HZMNK4BtC8hQbsEj9"><button>Blocklist</button></a>
+								<a href="https://hackmd.io/@cs111/cs200-bridge-2021"><button>Going to 200</button></a>
+								<a href="https://forms.gle/S8uyRv7ABAjbU5yZA"><button>Lab Switch Form</button></a>
 							</div>
 						</div>
 					</div>
