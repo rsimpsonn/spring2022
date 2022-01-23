@@ -537,19 +537,34 @@ button {
   row-gap: 50px;
 }
 
-#lab-menu {
-  grid-area: menu;
-  min-width: 30%;
+#labs-flex {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    column-gap: 10px;
 }
 
-#lab-info {
-  grid-area: info;
-  min-width: 30%;
-  color: black;
+#labs-menu {
 }
+
+#labs-info {
+  color: black;
+  text-align: center;
+}
+
+#labs-info-cal {
+    text-align: center;
+}
+
+#labs-info p {
+    text-align: center;
+}
+/* 
+#labs-info {
+    min-width: 30%;
+} */
 
 #lab-switch {
-  grid-area: switch;
   min-width: 30%;
   text-align: center;
   color: black;
@@ -558,8 +573,6 @@ button {
 a.lab-switch-button {
     border-radius: 30px;
     background-color: rgb(136, 115, 160);
-    /* background-color: white; */
-    /* color: black; */
     color: yellow;
 }
 
@@ -567,20 +580,11 @@ header.lab-calendar-title {
     color: red;
 }
 
-#lab-calendar {
-  grid-area: calendar;
-  min-width: 70%;
-}
-
+/* 
 #lab-title {
   text-align: left;
 }
-
-h1.labs-header {
-  font-size: 4rem;
-  color: yellow;
-}
-
+ */
 #header-pic {
   background-image: url("../img/header-pic.png");
   background-size: cover;
