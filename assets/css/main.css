@@ -602,6 +602,7 @@ body {
 
 .fa.fa-bars {
     display: none;
+    background-color: black;
 }
 
 .black-bg {
@@ -655,24 +656,23 @@ th {
 }
 
 .staff-pic {
-    width: 310px;
-    height: 310px;
-    display: block;
-    background-color: black;
-    object-fit: cover;
+  width: 240px;
+  height: 240px;
+  display: block;
+  background-color: black;
+  object-fit: cover;
 }
 
 .staff-pic-wrapper {
-    width: 310px;
-    min-height: 335px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: rgba(18, 3, 41, 1);
-    border-radius: 2%;
-    overflow: hidden;
-    padding: 15px;
-    padding-top: 0px;
+  max-width: 240px;
+  width: 240px;
+  min-height: 335px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  padding: 5px;
+  padding-top: 0px;
 }
 
 .staff-pic-text {
