@@ -224,7 +224,7 @@ button {
 }
 
 .window-x {
-    cursor: not-allowed;
+    cursor: pointer;
     margin-top: auto;
     margin-bottom: auto;
 }
@@ -545,6 +545,10 @@ button {
 
 /* LABS PAGE */
 
+#labs-wordart {
+    width: 20%
+}
+
 #labs-flex {
     /* flex-wrap: wrap when width is smaller than 786px*/
     display: flex;
@@ -569,15 +573,46 @@ button {
 
 /* ASSIGNMENTS PAGE */
 
-#assignments-flex {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    /* grid-template-columns: 1fr 1fr 1fr; */
-    /* display: flex; */
+#assignments-content {
+    padding: 0 0% 0%;
 }
 
-#assignments-flex .window-content {
+#assignments-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "homeworks projects drills";
+    column-gap: 25px;
+    row-gap: 25px;
+}
+
+@media (max-width: 1024px) {
+    #assignments-grid {
+        grid-template-areas: "projects drills" "homeworks drills";
+        grid-template-rows: 1fr 3fr;
+    }
+}
+
+@media (max-width: 768px) {
+    #assignments-grid {
+        grid-template-areas: "homeworks" "projects" "drills";
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 2fr;
+    }
+}
+
+#assignments-homework {
+    grid-area: homeworks;
+}
+
+#assignments-projects {
+    grid-area: projects;
+}
+
+#assignments-drills {
+    grid-area: drills;
+}
+
+#assignments-grid .window-content {
     display: flex;
     justify-content: center;
 }
@@ -820,6 +855,10 @@ a:focus {
 
 
 /*New CSS for Resources page*/
+
+#resources-wordart {
+    width: 20%;
+}
 
 .window-content-emails {
     padding: 0em 1em 1em 1em;

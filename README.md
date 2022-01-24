@@ -8,6 +8,5 @@ If you would like the homepage javascript to be functional (i.e. able to retriev
 
 
 ## TODO / BUGS
-* [BUG] Top links are unbolded on Resources, Calendar, and Staff pages
 * Update staff photos
 * Make all assignments tables on Assignments tables show on the same row in fullscreen desktop
