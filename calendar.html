@@ -51,25 +51,48 @@
     <main id="main" role="main">
         <div id="content-wrapper">
             <div class="content">
-                <div id="documents-content">
-                    <h1>TA and Office Hours</h1>
-                    <h3>(and other events to keep track of)</h3>
-                    <p>Please refer to this calendar for the most up-to-date TA hours and Office Hours.
-                        <!--Kathi's Office Hours are held in CIT 309. All other TA hours are held in the CIT; the specific rooms are listed on the corresponding calendar event.-->
-                        Please reach out to the HTAs if you have any questions about hours.</p>
-                    <p>Milda and Kathi are also available by appointment. Please email them at least a day in advance of when you'd like to meet.</p>
-                    </p>
-                    <p>You can find TA-hour sign ups on <a href="https://signmeup.cs.brown.edu/">signmeup</a>.</p>
-                    <p>Prior to being seen in debugging hours, fill out <a href="https://forms.gle/CYgtRzrtUwQegWGT7">this</a> brief questionnaire that checks whether you have tried the design steps and asks where you are stuck, so we can track where the
-                        class needs help.</p>
-                    <p>The TAs marked with ** on the Calendar indicate those who are available to help with Bridge Assignments for CS200.</p>
-                    <div class="iframe-container" id="calendar">
-                        <iframe src="https://calendar.google.com/calendar/embed?src=c_5n4eqphe471knldl4254v1iguc%40group.calendar.google.com&ctz=America%2FNew_York" style="border:solid 1px #777" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+                <div class="wordart-container">
+                    <img id="calendar-wordart" class="wordart" src="assets/img/calendar-wordart.png">
+                </div>
+                <div id="calendar-flex">
+                    <div class="window">
+                        <div class="window-top-bar">
+                            <div class="window-label">
+                                <span>TA and Office Hours</span>
+                                <img class="window-x" src="assets/img/windows-x.png">
+                            </div>
+                        </div>
+                        <div class="window-content centered-text">
+                            <h1>TA/Office Hours and Other Events</h1>
+                            <p>Please refer to this calendar for the most up-to-date TA hours and Office Hours.
+                                <!--Kathi's Office Hours are held in CIT 309. All other TA hours are held in the CIT; the specific rooms are listed on the corresponding calendar event.-->
+                                Please reach out to the HTAs if you have any questions about hours.</p>
+                            <p>Milda and Kathi are also available by appointment. Please email them at least a day in advance of when you'd like to meet.</p>
+                            </p>
+                            <p>You can find TA-hour sign ups on <a href="https://signmeup.cs.brown.edu/">signmeup</a>.</p>
+                            <p>Prior to being seen in debugging hours, fill out <a href="https://forms.gle/CYgtRzrtUwQegWGT7">this</a> brief questionnaire that checks whether you have tried the design steps and asks where you are stuck, so we can track where
+                                the class needs help.</p>
+                            <p>The TAs marked with ** on the Calendar indicate those who are available to help with Bridge Assignments for CS200.</p>
+                            <div class="iframe-container" id="calendar">
+                                <iframe src="https://calendar.google.com/calendar/embed?src=c_5n4eqphe471knldl4254v1iguc%40group.calendar.google.com&ctz=America%2FNew_York" style="border:solid 1px #777" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+                            </div>
+                        </div>
                     </div>
-                    <h1>Assignment Dates</h1>
-                    <p>Here is a calendar of all assignments and due dates. This will be updated with more events as they arrive. We suggest adding this calendar to your personal Google calendar by clicking the button in the bottom right corner.</p>
-                    <div class="iframe-container" id="calendar">
-                        <iframe src="https://calendar.google.com/calendar/embed?src=c_n7t43au3ral78qo97mvueaac44%40group.calendar.google.com&ctz=America%2FNew_York" style="border: solid 1px #777" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+
+                    <div class="window">
+                        <div class="window-top-bar">
+                            <div class="window-label">
+                                <span>Assignments Calendar</span>
+                                <img class="window-x" src="assets/img/windows-x.png">
+                            </div>
+                        </div>
+                        <div class="window-content centered-text">
+                            <h1>Assignment Dates</h1>
+                            <p>Here is a calendar of all assignments and due dates. This will be updated with more events as they arrive. We suggest adding this calendar to your personal Google calendar by clicking the button in the bottom right corner.</p>
+                            <div class="iframe-container" id="calendar">
+                                <iframe src="https://calendar.google.com/calendar/embed?src=c_n7t43au3ral78qo97mvueaac44%40group.calendar.google.com&ctz=America%2FNew_York" style="border: solid 1px #777" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -87,6 +110,7 @@
         <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
         <script type="text/javascript" src="assets/js/reuseable.js"></script>
         <script type="text/javascript" src="assets/js/staff_member.js"></script>
+        <script type="text/javascript" src="assets/js/homepage_interactive.js"></script>
     </footer>
 </body>
 

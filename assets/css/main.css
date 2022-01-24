@@ -12,7 +12,6 @@
 body {
     background-color: var(--main-background-color);
     height: 100%;
-    /* font-family: 'Raleway', sans-serif; */
     font-family: var(--site-font-family);
     font-size: 18px;
     color: var(--text-color);
@@ -166,7 +165,33 @@ button {
 }
 
 
-/* WINDOWS 2000 STYLE CONTAINERS */
+/* CLASSES FOR CENTERING */
+
+.centered-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.centered {
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.centered-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.centered-text * {
+    text-align: center;
+}
+
+
+/* WINDOWS 2000 WINDOW STYLE CONTAINERS */
 
 .hidden {
     display: none;
@@ -261,12 +286,6 @@ button {
     margin: 10px;
 }
 
-#documents-content {
-    min-height: 100%;
-    width: 100%;
-    padding: 0px 24px 24px 24px;
-}
-
 #documents-wrapper {
     display: flex;
     flex-direction: row;
@@ -281,6 +300,109 @@ button {
 #documents-top-content {
     display: inline-block;
     flex: 1;
+}
+
+
+/* HOMEPAGE */
+
+#homepage-content {
+    padding: 0;
+}
+
+#content-top {
+    text-align: center;
+}
+
+#content-top h1 {
+    font-size: 40%;
+}
+
+#content-top p {
+    text-align: center;
+}
+
+#about {
+    overflow: hidden;
+}
+
+#about .hidden-p {
+    max-height: 0;
+    opacity: 0;
+}
+
+.grid-container {
+    display: grid;
+    /* Possible template arrangement */
+    grid-template-areas: "assignments assignments assignments links" "feedback feedback calendar calendar";
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 50px;
+    row-gap: 50px;
+}
+
+#current-assignments {
+    grid-area: assignments;
+    min-width: 70%;
+}
+
+#hours-schedule {
+    grid-area: calendar;
+}
+
+#calendar-container {
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+#feedback {
+    grid-area: feedback;
+}
+
+#quick-links {
+    grid-area: links;
+}
+
+#quick-links-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: auto;
+    height: 100%;
+}
+
+#quick-links-container>.col-flex {
+    justify-content: space-around;
+}
+
+#quick-links button {
+    width: 100%;
+}
+
+#current-assignments a {
+    color: black;
+    text-decoration: underline;
+}
+
+.col-flex {
+    display: flex;
+    flex-direction: column;
+}
+
+.assignment-container {
+    color: black;
+}
+
+.assignment-container>div {
+    font-size: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.assignment-container>div {
+    font-size: 15px;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
 }
 
 @media (max-width: 785px) {
@@ -352,6 +474,16 @@ button {
         padding-right: 10px;
         white-space: nowrap;
     }
+    .window {
+        max-width: 90vw;
+    }
+    /* Change the grid layout on mobile*/
+    .grid-container {
+        grid-template-areas: "assignments" "links" "calendar" "feedback";
+        grid-template-columns: 1fr;
+        width: 100vw;
+        overflow: auto;
+    }
 }
 
 .sidebar-active {
@@ -378,6 +510,9 @@ button {
     border-radius: 8px;
 }
 
+
+/* WORDART */
+
 .wordart-container {
     display: flex;
     flex-direction: column;
@@ -390,134 +525,8 @@ button {
     width: 40%;
 }
 
-
-/* HOMEPAGE */
-
-#homepage-content {
-    padding: 0;
-}
-
-#content-top {
-    text-align: center;
-}
-
-#content-top h1 {
-    font-size: 40%;
-}
-
-#content-top p {
-    text-align: center;
-}
-
-#about {
-    overflow: hidden;
-}
-
-#about .hidden-p {
-    max-height: 0;
-    opacity: 0;
-    transition: max-height 2s ease-out;
-}
-
-.grid-container {
-    display: grid;
-    /* Possible template arrangement */
-    grid-template-areas: "assignments assignments assignments links" "feedback feedback calendar calendar";
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    column-gap: 50px;
-    row-gap: 50px;
-}
-
-@media (max-width: 786px) {
-    .window {
-        max-width: 90vw;
-    }
-    /* Change the grid layout on mobile*/
-    .grid-container {
-        grid-template-areas: "assignments" "links" "calendar" "feedback";
-        grid-template-columns: 1fr;
-        width: 100vw;
-        overflow: auto;
-    }
-}
-
-#current-assignments {
-    grid-area: assignments;
-    min-width: 70%;
-}
-
-#hours-schedule {
-    grid-area: calendar;
-}
-
-#calendar-container {
-    text-align: center;
-    margin-top: auto;
-    margin-bottom: auto;
-}
-
-#feedback {
-    grid-area: feedback;
-}
-
-.centered {
-    text-align: center;
-    margin-top: auto;
-    margin-bottom: auto;
-}
-
-#quick-links {
-    grid-area: links;
-}
-
-#quick-links-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    height: auto;
-    height: 100%;
-}
-
-#quick-links-container>.col-flex {
-    justify-content: space-around;
-}
-
-#quick-links button {
-    width: 100%;
-}
-
-#current-assignments a {
-    color: black;
-    text-decoration: underline;
-}
-
-.col-flex {
-    display: flex;
-    flex-direction: column;
-}
-
-.centered-col {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-}
-
-.assignment-container {
-    color: black;
-}
-
-.assignment-container>div {
-    font-size: 15px;
-    display: flex;
-    justify-content: space-between;
-}
-
-.assignment-container>div {
-    font-size: 15px;
-    padding: 0;
-    display: flex;
-    justify-content: space-between;
+#calendar-wordart {
+    width: 60%
 }
 
 @media (min-width: 786px) {
@@ -656,23 +665,23 @@ th {
 }
 
 .staff-pic {
-  width: 240px;
-  height: 240px;
-  display: block;
-  background-color: black;
-  object-fit: cover;
+    width: 240px;
+    height: 240px;
+    display: block;
+    background-color: black;
+    object-fit: cover;
 }
 
 .staff-pic-wrapper {
-  max-width: 240px;
-  width: 240px;
-  min-height: 335px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  overflow: hidden;
-  padding: 5px;
-  padding-top: 0px;
+    max-width: 240px;
+    width: 240px;
+    min-height: 335px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    padding: 5px;
+    padding-top: 0px;
 }
 
 .staff-pic-text {
