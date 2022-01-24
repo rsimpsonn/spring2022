@@ -548,13 +548,6 @@ button {
     font-weight: normal;
 }
 
-#header-pic {
-    background-image: url("../img/header-pic.png");
-    background-size: cover;
-    background-color: #859aa0;
-    height: 200px;
-}
-
 body {
     background-size: cover;
 }
@@ -592,9 +585,9 @@ body {
 }
 
 table {
-  border-collapse: separate;
-  margin-bottom: 2em;
-  width: 90%;
+    border-collapse: separate;
+    margin-bottom: 2em;
+    width: 90%;
 }
 
 tbody {
@@ -625,12 +618,10 @@ th {
 
 td,
 th {
-  padding: 6px;
-  /*border: 1px solid #ccc;*/
-  text-align: left;
+    padding: 6px;
+    /*border: 1px solid #ccc;*/
+    text-align: left;
 }
-
-
 
 #staff-mega-wrapper {
     display: flex;
@@ -779,54 +770,52 @@ a:focus {
 
 /*New CSS for Resources page*/
 
-
 .window-content-emails {
-  padding: 0em 1em 1em 1em;
-  background: white;
-  flex-grow: 1;
+    padding: 0em 1em 1em 1em;
+    background: white;
+    flex-grow: 1;
 }
 
 .resource_box {
-  background-color:  #EFEFEF;
-  margin: 10px 10px 10px;
-  max-height: 0;
-  min-height: 60px;
-  overflow: hidden;
-  transition: max-height 0.2s ease-out;
-  border-bottom: black;
+    background-color: #EFEFEF;
+    margin: 10px 10px 10px;
+    max-height: 0;
+    min-height: 60px;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    border-bottom: black;
 }
 
-.resource_box>p{
-  padding: 10px
+.resource_box>p {
+    padding: 10px
 }
 
 .collapsible {
-  color: #fffac9;
-  cursor: pointer;
-  width: 100%;
-  border: none;
-  text-align: left;
-  margin: 0px 0px 0px 0px;
-  outline: none;
-  font-size: 15px;
+    color: #fffac9;
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    text-align: left;
+    margin: 0px 0px 0px 0px;
+    outline: none;
+    font-size: 15px;
 }
 
 .button_format {
-  color: black;
-  background-color: silver;
-  box-shadow: 1px 1px 0 black;
-  font-size: 25px;
-  max-height: 0;
-  min-height: 59px;
-  margin: 0px 0px 10px 0px;
-  padding-top: 10px;
-  padding-left: 10px;
-  text-align: center;
-  overflow: hidden;
-  transition: max-height 0.2s ease-out;
-  display: flex;
-  justify-content: space-between;
-
+    color: black;
+    background-color: silver;
+    box-shadow: 1px 1px 0 black;
+    font-size: 25px;
+    max-height: 0;
+    min-height: 59px;
+    margin: 0px 0px 10px 0px;
+    padding-top: 10px;
+    padding-left: 10px;
+    text-align: center;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    display: flex;
+    justify-content: space-between;
 }
 
 .useful_links {
@@ -838,82 +827,71 @@ a:focus {
     margin: 0px 10px 10px;
 }
 
-.link-box{
-  margin: 0px 10px 10px 10px;
+.link-box {
+    margin: 0px 10px 10px 10px;
 }
 
-.button_margin{
-  margin: 10px;
+.button_margin {
+    margin: 10px;
 }
 
 .resources-quick-links>.col-flex {
-  row-gap: 10px;
+    row-gap: 10px;
 }
 
-.pad-text{
-  padding: 20px;
+.pad-text {
+    padding: 20px;
 }
-
 
 @media (min-width: 786px) {
-  .left {
-    width: 23%;
-  }
-
-  .email-box{
-    font-size:80% !important;
-    word-break: break-word;
-  }
-
-  .right {
-    width: 75%;
-  }
-
-  .lectures-container {
-    width: 70%;
-    margin-top: 10px;
-    padding-right:  10px;
-  }
-
-  .sections-container {
-    width: 30%;
-    margin-top: 10px;
-  }
-
-  .resources-quick-links button {
-    height: 30px;
-    width: 200px;
-    text-overflow: ellipsis;
-  }
+    .left {
+        width: 23%;
+    }
+    .email-box {
+        font-size: 80% !important;
+        word-break: break-word;
+    }
+    .right {
+        width: 75%;
+    }
+    .lectures-container {
+        width: 70%;
+        margin-top: 10px;
+        padding-right: 10px;
+    }
+    .sections-container {
+        width: 30%;
+        margin-top: 10px;
+    }
+    .resources-quick-links button {
+        height: 30px;
+        width: 200px;
+        text-overflow: ellipsis;
+    }
 }
 
 @media (max-width: 786px) {
-  .left {
-    width: 100%;
-  }
-
-  .resources-quick-links button {
-    height: 30px;
-    width: 200px;
-  }
-
-  .email-box{
-    font-size:100% !important;
-  }
-
-  .right {
-    width: 100%;
-  }
-
-  .lectures-container {
-    width: 100%;
-    padding: 10px;
-  }
-
-  .sections-container {
-    width: 100%;
-    padding: 10px;
-  }
+    .left {
+        width: 100%;
+    }
+    .resources-quick-links button {
+        height: 30px;
+        width: 200px;
+    }
+    .email-box {
+        font-size: 100% !important;
+    }
+    .right {
+        width: 100%;
+    }
+    .lectures-container {
+        width: 100%;
+        padding: 10px;
+    }
+    .sections-container {
+        width: 100%;
+        padding: 10px;
+    }
 }
 
 .quick-links-2 {
