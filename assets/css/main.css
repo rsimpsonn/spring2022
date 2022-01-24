@@ -542,6 +542,9 @@ button {
     }
 }
 
+
+/* LABS PAGE */
+
 #labs-flex {
     /* flex-wrap: wrap when width is smaller than 786px*/
     display: flex;
@@ -563,6 +566,9 @@ button {
     font-weight: normal;
 }
 
+
+/* ASSIGNMENTS PAGE */
+
 #assignments-flex {
     display: flex;
     flex-wrap: wrap;
@@ -579,6 +585,19 @@ button {
 .assignments-table-wrapper {
     display: flex;
     justify-content: center;
+}
+
+#calendar-grid {
+    display: grid;
+    column-gap: 50px;
+    row-gap: 50px;
+    grid-template-columns: 1fr 1fr;
+}
+
+@media (max-width: 1024px) {
+    #calendar-grid {
+        grid-template-columns: 1fr;
+    }
 }
 
 body {
