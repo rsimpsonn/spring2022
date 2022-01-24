@@ -525,6 +525,10 @@ button {
     width: 40%;
 }
 
+.smaller-wordart {
+    width: 20%;
+}
+
 #calendar-wordart {
     width: 60%
 }
