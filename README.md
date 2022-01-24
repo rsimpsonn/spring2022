@@ -9,4 +9,4 @@ If you would like the homepage javascript to be functional (i.e. able to retriev
 
 ## TODO / BUGS
 * Update staff photos
-* Make all assignments tables on Assignments tables show on the same row in fullscreen desktop
+* (Optional) Add ability to drag windows
