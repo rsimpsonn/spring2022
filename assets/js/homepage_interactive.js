@@ -78,6 +78,12 @@ function setTranslate(xPos, yPos, el) {
 
 function makeWindowsDraggable() {
     const allWindows = document.querySelectorAll('.window');
+    const draggableWindows = Array.from(allWindows).map((window) => {
+        let dragBar = window.querySelector('.window-top-bar');
+        return draggableWindow = new DraggableWindow(dragBar, window);
+    })
+    const content = document.querySelector('#main')
+
     allWindows.forEach((window) => {
         let dragBar = window.querySelector('.window-top-bar')
         let draggableWindow = new DraggableWindow(dragBar, window);
