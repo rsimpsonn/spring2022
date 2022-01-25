@@ -77,6 +77,7 @@ def json_to_table(json_path, table_id, columns, descr):
         if "Display" in item:
             if item["Display"]:
                 table.append(item_to_row(item, columns))
+
     return table
 
 def update_file(json_path, html_path, replace_id, content_id, columns, descr):
@@ -88,6 +89,8 @@ def update_file(json_path, html_path, replace_id, content_id, columns, descr):
             print('No HTML for %s, skipping' % descr)
             return
     # print(new_table)
+    #print(new_table)
+    #print(replace_id)
     full_html.find('#%s' % replace_id).html(new_table)
     # print(new_table)
     txt = full_html.html(method='html')
