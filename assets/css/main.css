@@ -12,7 +12,6 @@
 body {
     background-color: var(--main-background-color);
     height: 100%;
-    /* font-family: 'Raleway', sans-serif; */
     font-family: var(--site-font-family);
     font-size: 18px;
     color: var(--text-color);
@@ -166,7 +165,33 @@ button {
 }
 
 
-/* WINDOWS 2000 STYLE CONTAINERS */
+/* CLASSES FOR CENTERING */
+
+.centered-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.centered {
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.centered-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.centered-text * {
+    text-align: center;
+}
+
+
+/* WINDOWS 2000 WINDOW STYLE CONTAINERS */
 
 .hidden {
     display: none;
@@ -199,7 +224,7 @@ button {
 }
 
 .window-x {
-    cursor: not-allowed;
+    cursor: pointer;
     margin-top: auto;
     margin-bottom: auto;
 }
@@ -262,12 +287,6 @@ button {
     margin: 10px;
 }
 
-#documents-content {
-    min-height: 100%;
-    width: 100%;
-    padding: 0px 24px 24px 24px;
-}
-
 #documents-wrapper {
     display: flex;
     flex-direction: row;
@@ -282,6 +301,109 @@ button {
 #documents-top-content {
     display: inline-block;
     flex: 1;
+}
+
+
+/* HOMEPAGE */
+
+#homepage-content {
+    padding: 0;
+}
+
+#content-top {
+    text-align: center;
+}
+
+#content-top h1 {
+    font-size: 40%;
+}
+
+#content-top p {
+    text-align: center;
+}
+
+#about {
+    overflow: hidden;
+}
+
+#about .hidden-p {
+    max-height: 0;
+    opacity: 0;
+}
+
+.grid-container {
+    display: grid;
+    /* Possible template arrangement */
+    grid-template-areas: "assignments assignments assignments links" "feedback feedback calendar calendar";
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 50px;
+    row-gap: 50px;
+}
+
+#current-assignments {
+    grid-area: assignments;
+    min-width: 70%;
+}
+
+#hours-schedule {
+    grid-area: calendar;
+}
+
+#calendar-container {
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+#feedback {
+    grid-area: feedback;
+}
+
+#quick-links {
+    grid-area: links;
+}
+
+#quick-links-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: auto;
+    height: 100%;
+}
+
+#quick-links-container>.col-flex {
+    justify-content: space-around;
+}
+
+#quick-links button {
+    width: 100%;
+}
+
+#current-assignments a {
+    color: black;
+    text-decoration: underline;
+}
+
+.col-flex {
+    display: flex;
+    flex-direction: column;
+}
+
+.assignment-container {
+    color: black;
+}
+
+.assignment-container>div {
+    font-size: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.assignment-container>div {
+    font-size: 15px;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
 }
 
 @media (max-width: 785px) {
@@ -353,6 +475,16 @@ button {
         padding-right: 10px;
         white-space: nowrap;
     }
+    .window {
+        max-width: 90vw;
+    }
+    /* Change the grid layout on mobile*/
+    .grid-container {
+        grid-template-areas: "assignments" "links" "calendar" "feedback";
+        grid-template-columns: 1fr;
+        width: 100vw;
+        overflow: auto;
+    }
 }
 
 .sidebar-active {
@@ -380,139 +512,26 @@ button {
 }
 
 
-/* HOMEPAGE */
+/* WORDART */
 
-#homepage-content {
-    padding: 0;
-}
-
-#content-top {
-    text-align: center;
-}
-
-#content-top h1 {
-    font-size: 40%;
-}
-
-#content-top p {
-    text-align: center;
-}
-
-#about {
-    overflow: hidden;
-}
-
-#about .hidden-p {
-    max-height: 0;
-    opacity: 0;
-    transition: max-height 2s ease-out;
-}
-
-#about:hover .hidden-p {
-    /* max-height: 200px;
-    opacity: 100;
-    transition: max-height 2s ease-in; */
-}
-
-.grid-container {
-    display: grid;
-    /* Possible template arrangement */
-    grid-template-areas: "assignments assignments assignments links" "feedback feedback calendar calendar";
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    column-gap: 50px;
-    row-gap: 50px;
-}
-
-@media (max-width: 786px) {
-    .window {
-        max-width: 90vw;
-    }
-    /* Change the grid layout on mobile*/
-    .grid-container {
-        grid-template-areas: "assignments" "links" "calendar" "feedback";
-        grid-template-columns: 1fr;
-        width: 100vw;
-        overflow: auto;
-    }
-}
-
-#current-assignments {
-    grid-area: assignments;
-    min-width: 70%;
-}
-
-#hours-schedule {
-    grid-area: calendar;
-}
-
-#calendar-container {
-    text-align: center;
-    margin-top: auto;
-    margin-bottom: auto;
-}
-
-#feedback {
-    grid-area: feedback;
-}
-
-.centered {
-    text-align: center;
-    margin-top: auto;
-    margin-bottom: auto;
-}
-
-#quick-links {
-    grid-area: links;
-}
-
-#quick-links-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    height: auto;
-    height: 100%;
-}
-
-#quick-links-container>.col-flex {
-    justify-content: space-around;
-}
-
-#quick-links button {
-    width: 100%;
-}
-
-#current-assignments a {
-    color: black;
-    text-decoration: underline;
-}
-
-.col-flex {
-    display: flex;
-    flex-direction: column;
-}
-
-.centered-col {
+.wordart-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
+    margin-bottom: 20px;
 }
 
-.assignment-container {
-    color: black;
+.wordart {
+    width: 40%;
 }
 
-.assignment-container>div {
-    font-size: 15px;
-    display: flex;
-    justify-content: space-between;
+.smaller-wordart {
+    width: 20%;
 }
 
-.assignment-container>div {
-    font-size: 15px;
-    padding: 0;
-    display: flex;
-    justify-content: space-between;
+#calendar-wordart {
+    width: 60%
 }
 
 @media (min-width: 786px) {
@@ -526,6 +545,13 @@ button {
     #sidebar-open {
         display: hidden;
     }
+}
+
+
+/* LABS PAGE */
+
+#labs-wordart {
+    width: 20%
 }
 
 #labs-flex {
@@ -549,11 +575,69 @@ button {
     font-weight: normal;
 }
 
-#header-pic {
-    background-image: url("../img/header-pic.png");
-    background-size: cover;
-    background-color: #859aa0;
-    height: 200px;
+
+/* ASSIGNMENTS PAGE */
+
+#assignments-content {
+    padding: 0 0% 0%;
+}
+
+#assignments-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "homeworks projects drills";
+    column-gap: 25px;
+    row-gap: 25px;
+}
+
+@media (max-width: 1024px) {
+    #assignments-grid {
+        grid-template-areas: "projects drills" "homeworks drills";
+        grid-template-rows: 1fr 3fr;
+    }
+}
+
+@media (max-width: 768px) {
+    #assignments-grid {
+        grid-template-areas: "homeworks" "projects" "drills";
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 2fr;
+    }
+}
+
+#assignments-homework {
+    grid-area: homeworks;
+}
+
+#assignments-projects {
+    grid-area: projects;
+}
+
+#assignments-drills {
+    grid-area: drills;
+}
+
+#assignments-grid .window-content {
+    display: flex;
+    justify-content: center;
+}
+
+.assignments-table-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+#calendar-grid {
+    display: grid;
+    column-gap: 50px;
+    row-gap: 50px;
+    grid-template-columns: 1fr 1fr;
+}
+
+@media (max-width: 1024px) {
+    #calendar-grid {
+        grid-template-columns: 1fr;
+    }
 }
 
 body {
@@ -594,9 +678,9 @@ body {
 }
 
 table {
-  border-collapse: separate;
-  margin-bottom: 2em;
-  width: 90%;
+    border-collapse: separate;
+    margin-bottom: 2em;
+    width: 90%;
 }
 
 tbody {
@@ -627,12 +711,10 @@ th {
 
 td,
 th {
-  padding: 6px;
-  /*border: 1px solid #ccc;*/
-  text-align: left;
+    padding: 6px;
+    /*border: 1px solid #ccc;*/
+    text-align: left;
 }
-
-
 
 #staff-mega-wrapper {
     display: flex;
@@ -642,23 +724,23 @@ th {
 }
 
 .staff-pic {
-  width: 240px;
-  height: 240px;
-  display: block;
-  background-color: black;
-  object-fit: cover;
+    width: 240px;
+    height: 240px;
+    display: block;
+    background-color: black;
+    object-fit: cover;
 }
 
 .staff-pic-wrapper {
-  max-width: 240px;
-  width: 240px;
-  min-height: 335px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  overflow: hidden;
-  padding: 5px;
-  padding-top: 0px;
+    max-width: 240px;
+    width: 240px;
+    min-height: 335px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    padding: 5px;
+    padding-top: 0px;
 }
 
 .staff-pic-text {
@@ -673,7 +755,6 @@ th {
 .staff-pic-text-soft {
     overflow-wrap: all;
     font-size: 12pt;
-    /* font-weight: bold; */
     padding-top: 10px;
     text-align: center;
     margin-bottom: 0;
@@ -780,54 +861,56 @@ a:focus {
 
 /*New CSS for Resources page*/
 
+#resources-wordart {
+    width: 20%;
+}
 
 .window-content-emails {
-  padding: 0em 1em 1em 1em;
-  background: white;
-  flex-grow: 1;
+    padding: 0em 1em 1em 1em;
+    background: white;
+    flex-grow: 1;
 }
 
 .resource_box {
-  background-color:  #EFEFEF;
-  margin: 10px 10px 10px;
-  max-height: 0;
-  min-height: 60px;
-  overflow: hidden;
-  transition: max-height 0.2s ease-out;
-  border-bottom: black;
+    background-color: #EFEFEF;
+    margin: 10px 10px 10px;
+    max-height: 0;
+    min-height: 60px;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    border-bottom: black;
 }
 
-.resource_box>p{
-  padding: 10px
+.resource_box>p {
+    padding: 10px
 }
 
 .collapsible {
-  color: #fffac9;
-  cursor: pointer;
-  width: 100%;
-  border: none;
-  text-align: left;
-  margin: 0px 0px 0px 0px;
-  outline: none;
-  font-size: 15px;
+    color: #fffac9;
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    text-align: left;
+    margin: 0px 0px 0px 0px;
+    outline: none;
+    font-size: 15px;
 }
 
 .button_format {
-  color: black;
-  background-color: silver;
-  box-shadow: 1px 1px 0 black;
-  font-size: 25px;
-  max-height: 0;
-  min-height: 59px;
-  margin: 0px 0px 10px 0px;
-  padding-top: 10px;
-  padding-left: 10px;
-  text-align: center;
-  overflow: hidden;
-  transition: max-height 0.2s ease-out;
-  display: flex;
-  justify-content: space-between;
-
+    color: black;
+    background-color: silver;
+    box-shadow: 1px 1px 0 black;
+    font-size: 25px;
+    max-height: 0;
+    min-height: 59px;
+    margin: 0px 0px 10px 0px;
+    padding-top: 10px;
+    padding-left: 10px;
+    text-align: center;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    display: flex;
+    justify-content: space-between;
 }
 
 .useful_links {
@@ -839,82 +922,71 @@ a:focus {
     margin: 0px 10px 10px;
 }
 
-.link-box{
-  margin: 0px 10px 10px 10px;
+.link-box {
+    margin: 0px 10px 10px 10px;
 }
 
-.button_margin{
-  margin: 10px;
+.button_margin {
+    margin: 10px;
 }
 
 .resources-quick-links>.col-flex {
-  row-gap: 10px;
+    row-gap: 10px;
 }
 
-.pad-text{
-  padding: 20px;
+.pad-text {
+    padding: 20px;
 }
-
 
 @media (min-width: 786px) {
-  .left {
-    width: 23%;
-  }
-
-  .email-box{
-    font-size:80% !important;
-    word-break: break-word;
-  }
-
-  .right {
-    width: 75%;
-  }
-
-  .lectures-container {
-    width: 70%;
-    margin-top: 10px;
-    padding-right:  10px;
-  }
-
-  .sections-container {
-    width: 30%;
-    margin-top: 10px;
-  }
-
-  .resources-quick-links button {
-    height: 30px;
-    width: 200px;
-    text-overflow: ellipsis;
-  }
+    .left {
+        width: 23%;
+    }
+    .email-box {
+        font-size: 80% !important;
+        word-break: break-word;
+    }
+    .right {
+        width: 75%;
+    }
+    .lectures-container {
+        width: 70%;
+        margin-top: 10px;
+        padding-right: 10px;
+    }
+    .sections-container {
+        width: 30%;
+        margin-top: 10px;
+    }
+    .resources-quick-links button {
+        height: 30px;
+        width: 200px;
+        text-overflow: ellipsis;
+    }
 }
 
 @media (max-width: 786px) {
-  .left {
-    width: 100%;
-  }
-
-  .resources-quick-links button {
-    height: 30px;
-    width: 200px;
-  }
-
-  .email-box{
-    font-size:100% !important;
-  }
-
-  .right {
-    width: 100%;
-  }
-
-  .lectures-container {
-    width: 100%;
-    padding: 10px;
-  }
-
-  .sections-container {
-    width: 100%;
-    padding: 10px;
-  }
+    .left {
+        width: 100%;
+    }
+    .resources-quick-links button {
+        height: 30px;
+        width: 200px;
+    }
+    .email-box {
+        font-size: 100% !important;
+    }
+    .right {
+        width: 100%;
+    }
+    .lectures-container {
+        width: 100%;
+        padding: 10px;
+    }
+    .sections-container {
+        width: 100%;
+        padding: 10px;
+    }
 }
 
 .quick-links-2 {
