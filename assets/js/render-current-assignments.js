@@ -13,7 +13,7 @@ from the top of the project. Then, visit localhost:8000/index.html and view the 
 const CURR_DATE = new Date()
 const CURR_TIME = new Date().getTime()
 const MILISECONDS_IN_24_HOURS = 86_400_000
-const TESTING_RETRIEVAL = true
+const TESTING_RETRIEVAL = false
 const RENDER_CURR_LAB = true
 
 async function retrieveJson(filepath) {
