@@ -553,11 +553,11 @@ button {
     width: 20%
 }
 
-#labs-flex {
-    /* flex-wrap: wrap when width is smaller than 786px*/
-    display: flex;
-    justify-content: space-between;
-    column-gap: 10px;
+#labs-grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 25px;
+    row-gap: 25px;
 }
 
 #labs-menu {
@@ -572,6 +572,12 @@ button {
 #labs-info p {
     text-align: center;
     font-weight: normal;
+}
+
+@media (max-width: 786px) {
+    #labs-grid {
+        grid-template-columns: 1fr;
+    }
 }
 
 

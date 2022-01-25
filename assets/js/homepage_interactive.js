@@ -93,4 +93,4 @@ function makeWindowsDraggable() {
 
 
 makeWindowsClosable()
-makeWindowsDraggable()
+    // makeWindowsDraggable()
