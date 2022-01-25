@@ -583,7 +583,7 @@ button {
 
 #assignments-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1.5fr 1.5fr 1fr;
     grid-template-areas: "homeworks projects drills";
     column-gap: 25px;
     row-gap: 25px;
@@ -591,6 +591,7 @@ button {
 
 @media (max-width: 1024px) {
     #assignments-grid {
+        grid-template-columns: 1.5fr 1fr;
         grid-template-areas: "projects drills" "homeworks drills";
         grid-template-rows: 1fr 3fr;
     }
