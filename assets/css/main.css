@@ -251,6 +251,10 @@ button {
     flex-grow: 1;
 }
 
+.window-content>* {
+    max-width: 98%;
+}
+
 
 /* HOMEPAGE */
 
@@ -524,11 +528,30 @@ button {
 }
 
 .smaller-wordart {
-    width: 20%;
+    width: 25%;
 }
 
 #calendar-wordart {
     width: 60%
+}
+
+#resources-wordart {
+    /* width: 30%; */
+}
+
+@media (max-width: 786px) {
+    .wordart {
+        width: 80%;
+    }
+    .smaller-wordart {
+        width: 60% !important;
+    }
+    #resources-wordart {
+        /* width: 75%; */
+    }
+    #calendar-wordart {
+        width: 120%;
+    }
 }
 
 @media (min-width: 786px) {
@@ -546,10 +569,6 @@ button {
 
 
 /* LABS PAGE */
-
-#labs-wordart {
-    width: 20%
-}
 
 #labs-grid {
     display: grid;
@@ -790,6 +809,11 @@ p {
     width: 100%;
 }
 
+iframe {
+    max-width: 95%;
+    max-height: 95%;
+}
+
 .staff-wrapper {
     display: flex;
     flex-wrap: wrap;
@@ -865,10 +889,6 @@ a:focus {
 
 /*New CSS for Resources page*/
 
-#resources-wordart {
-    width: 20%;
-}
-
 .window-content-emails {
     padding: 0em 1em 1em 1em;
     background: white;
@@ -883,6 +903,7 @@ a:focus {
     overflow: hidden;
     transition: max-height 0.2s ease-out;
     border-bottom: black;
+    max-width: 93%;
 }
 
 .resource_box>p {
