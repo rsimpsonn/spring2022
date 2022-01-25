@@ -263,10 +263,6 @@ button {
     font-size: 100px;
 }
 
-#title-img {
-    width: 80%;
-}
-
 .menu-button {
     display: none;
 }
@@ -303,9 +299,6 @@ button {
     display: inline-block;
     flex: 1;
 }
-
-
-/* HOMEPAGE */
 
 #homepage-content {
     padding: 0;
@@ -407,7 +400,16 @@ button {
     justify-content: space-between;
 }
 
-@media (max-width: 785px) {
+@media (max-width: 786px) {
+    .banner {
+        font-size: 12px;
+    }
+    .banner h3 {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 786px) {
     body {
         overflow-x: hidden;
     }
@@ -535,8 +537,8 @@ button {
     width: 60%
 }
 
-#resources-wordart {
-    /* width: 30%; */
+#homepage-wordart {
+    width: 90%;
 }
 
 @media (max-width: 786px) {
@@ -546,11 +548,11 @@ button {
     .smaller-wordart {
         width: 60% !important;
     }
-    #resources-wordart {
-        /* width: 75%; */
-    }
     #calendar-wordart {
         width: 120%;
+    }
+    #homepage-wordart {
+        width: 140%;
     }
 }
 
