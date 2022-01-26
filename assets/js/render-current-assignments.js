@@ -56,11 +56,9 @@ function renderCurrAssignment(domElementId, filepath) {
     retrieveJson(filepath)
         .then(data => {
             currentAssignment = data[0]
-            console.log(data)
             if (!TESTING_RETRIEVAL) {
                 currentAssignment = findCurrAssignment(data)
             }
-            console.log(currentAssignment)
             if (currentAssignment != null) {
                 renderAssignmentHelper(domElementId, currentAssignment)
             } else {
@@ -91,7 +89,11 @@ function renderMostRecentLab() {
     const labJsonUrl = 'assets/json/labs.json'
     retrieveJson(labJsonUrl)
         .then(labs => {
-            displayedOnly = labs.filter((lab) => lab["Display"])
+            console.log("labs", labs);
+            displayedOnly = labs.filter((lab) => { return lab["Display"] })
+            if (displayedOnly.length === 0) {
+                return
+            }
             lastDisplayed = displayedOnly[displayedOnly.length - 1]
             labDiv = document.getElementById('current-lab')
             labDiv.innerHTML = ''

@@ -29,7 +29,7 @@ class DraggableWindow {
 
 function dragStartFunction(itemToDrag) {
     return (event) => {
-        console.log("Drag start", event, itemToDrag)
+        // console.log("Drag start", event, itemToDrag)
         if (event.type == "touchstart") {
             itemToDrag.initialX = event.touches[0].clientX - itemToDrag.xOffset;
             itemToDrag.initialY = event.touches[0].clientY - itemToDrag.yOffset;
@@ -45,7 +45,7 @@ function dragStartFunction(itemToDrag) {
 
 function deactivateDrag(allDraggableWindows) {
     return (event) => {
-        console.log("deactivate", allDraggableWindows)
+        // console.log("deactivate", allDraggableWindows)
         allDraggableWindows.forEach((draggableWindow) => {
             draggableWindow.initialX = draggableWindow.currentX;
             draggableWindow.initialY = draggableWindow.currentY;
@@ -75,7 +75,6 @@ function dragFunction(allDraggableWindows) {
 }
 
 function setTranslate(xPos, yPos, el) {
-    console.log(el.style.transform)
     el.style.transform = "translate3d(" + xPos + "px, " + yPos + "px, 0)";
 }
 
@@ -92,7 +91,6 @@ function makeWindowsDraggable() {
     mainArea.addEventListener('mousemove', dragFunction(allDraggableWindows), false);
 
     allDraggableWindows.forEach((draggableWindow) => {
-        console.log(draggableWindow)
         draggableWindow.dragBar.addEventListener("touchstart", dragStartFunction(draggableWindow), false);
         draggableWindow.dragBar.addEventListener("mousedown", dragStartFunction(draggableWindow), false);
     });
