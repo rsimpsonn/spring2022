@@ -67,7 +67,9 @@
         <div class="window-top-bar">
             <div class="window-label">
                 <span>Homeworks</span>
-    <img class="window-x" src="assets/img/windows-x.png">
+    <div id="popup-container" style="display: none">
+    <img class="window-x" onclick="togglePopup()" src="assets/img/windows-x.png">
+    </div>
     </div>
     </div>
     <div class="window-content">
@@ -85,11 +87,13 @@
     </div>
 
     <div class="window" id="assignments-drills">
+        <div id="popup-container" style="display: none">
         <div class="window-top-bar">
             <div class="window-label">
                 <span>Drills</span>
-                <img class="window-x" src="assets/img/windows-x.png">
+                <img class="window-x" onclick="togglePopup()" src="assets/img/windows-x.png">
             </div>
+        </div>
         </div>
         <div class="window-content">
             <div>
@@ -368,11 +372,13 @@
     </div>
 
     <div class="window" id="assignments-projects">
+        <div id="popup-container" style="display: none">
         <div class="window-top-bar">
             <div class="window-label">
                 <span>Projects</span>
-                <img class="window-x" src="assets/img/windows-x.png">
+                <img class="window-x" onclick="togglePopup()" src="assets/img/windows-x.png">
             </div>
+        </div>
         </div>
         <div class="window-content">
             <div>
@@ -444,6 +450,16 @@
             </div>
         </div>
         <!-- Scripts -->
+        <script type="text/javascript">
+            function togglePopup() {
+                let container = document.getElementById('popup-container')
+                if (container.style.display == 'none') {
+                    container.style.display = 'block'
+                } else {
+                    container.style.display = 'none'
+                }
+            }
+        </script>
         <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
         <script type="text/javascript" src="assets/js/reuseable.js"></script>
