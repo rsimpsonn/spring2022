@@ -1,0 +1,51 @@
+<html lang='en'>
+
+<head>
+    <!-- Meta info -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+    <meta content="Brown CS111, Computing Foundations: Data, Spring 2022" name="description">
+    <meta name="keywords" content="Brown,Computer Science,Brown CS, CS111, CSCI111, CSCI0111, CS 111">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>You Do Not Want to Miss This!</title>
+    <!-- CSS and Fonts -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Noto+Serif&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&family=Raleway&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,500;0,600;0,700;1,300;1,400;1,500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<div class="popup-container">
+		<img id="ad" style="max-width: 1000px; max-height: 600px; box-shadow: 0px 0px 50px black" src="assets/img/ads/singles.png">
+	</div>
+</body>
+
+<script>
+	const files = [
+	'101', 
+	'buyyourown', 
+	'ferret!', 
+	'fruit', 
+	'lawyer', 
+	'netflix', 
+	'political', 
+	'pyreted', 
+	'responsible', 
+	'singles',
+	'spy_kids',
+	'virus',
+	'visitor'
+	]
+	const random = Math.floor(Math.random() * files.length)
+	let image = document.getElementById('ad')
+	image.src = 'assets/img/ads/' + files[random] + '.png'
+</script>
+</html>

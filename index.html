@@ -58,18 +58,6 @@
     <!--Content-->
     <main id="main" role="main">
     	 <div id="popup-container" class="popup-container" style="display: none">
-        	<div class="window" id="hours-schedule">
-                        <div class="window-top-bar">
-                            <div class="window-label">
-                                <span>Hours Coming Up! - Hours Schedule</span>
-                                <img class="window-x" onclick="togglePopup()" src="assets/img/windows-x.png">
-                            </div>
-                        </div>
-                        <div class="window-content centered">
-        									<img style="width: 250px; height: auto" id="popup" src="assets/img/ads/singles.png">
-        								</div>
-        							</div>
-        						</div>
         <div class="banner">
             <div class="wordart-container">
                 <img class="wordart" id="homepage-wordart" src="assets/img/title-wordart.png">
@@ -128,8 +116,8 @@
                             </div>
                         </div>
                         <div class="window-toolbar">
-                            <span onclick="togglePopup()"><span class="underline">F</span>ile</span>
-                            <span><span class="underline">H</span>elp</span>
+                            <span onclick="window.open('ads.html')"><span class="underline">F</span>ile</span>
+                            <span onclick="window.open('ads.html')"><span class="underline">H</span>elp</span>
                             <span><span class="underline">E</span>dit</span>
                             <span>I<span class="underline">n</span>sert</span>
                         </div>
@@ -298,16 +286,6 @@
             </span>
     </main>
     <!-- Scripts -->
-    <script type="text/javascript">
-    	function togglePopup() {
-    		let container = document.getElementById('popup-container')
-    		if (container.style.display == 'none') {
-    			container.style.display = 'block'
-    		} else {
-    			container.style.display = 'none'
-    		}
-    	}
-    </script>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="assets/js/reuseable.js"></script>
