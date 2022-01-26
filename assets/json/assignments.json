@@ -1,9 +1,9 @@
 [
     {
-	"Assignment":{"name": "Homework 0", "link": "https://docs.google.com/forms/d/e/1FAIpQLSeQQVJug04S9_72AiApwVS2g9JnxOEmCVPffbgMvTRLiwj-QA/viewform?usp=sf_link"},
-	"Out":"Wed, 9/8/21",
-	"In":"Sun, 9/12/21 @ 11pm ET",
-	"Display":false,
+	"Assignment":{"name": "Homework 0", "link": "https://forms.gle/STCiFebaAieZdgaJA"},
+	"Out":"Wed, 1/26/22",
+	"In":"Mon, 1/31/22 @ 11:59pm ET",
+	"Display":true,
 	"Support Docs":[]
     },
     {
@@ -63,3 +63,4 @@
   "Support Docs":[]
     }
 ]
+

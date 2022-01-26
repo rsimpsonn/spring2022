@@ -30,7 +30,7 @@
                       "link": "https://drive.google.com/file/d/1xCV4Bs91M_qwYvdQm3u-1WywbS_xs6QA/view?usp=sharing"
                     }
             ],
-            "Display": true
+            "Display": false
         },
  {
      "Lab": {
@@ -46,8 +46,8 @@
        "name": "Lab 3 Solution",
        "link": "https://drive.google.com/file/d/1-m-oMPgF2QtN7G7vxE7Cufp36K4VSKTP/view?usp=sharing"
      }
-			     ],
-     "Display": true
+                             ],
+     "Display": false
  },
  {
      "Lab": {
@@ -63,7 +63,7 @@
      "name": "Lab 4 Solution",
      "link": "https://drive.google.com/file/d/1kly1SpUleSGvkBml6Pn85LNk8iRVdbGZ/view?usp=sharing"
      }],
-     "Display": true
+     "Display": false
  },
  {
                 "Lab": {
@@ -80,7 +80,7 @@
                           "link": "https://drive.google.com/file/d/104DM0GHN6Po5FtwHtDfNqe0XgFugeinH/view?usp=sharing"
                         }
                 ],
-                "Display": true
+                "Display": false
         },
         {
                 "Lab": {
@@ -97,7 +97,7 @@
                                 "link": "https://drive.google.com/file/d/1UaVVPfN4gUlqKaTe43Ma1B4gE6JOuyyw/view?usp=sharing"
                         }
                 ],
-                "Display": true
+                "Display": false
         },
     {
                 "Lab": {
@@ -114,13 +114,13 @@
                                 "link": "https://drive.google.com/file/d/1niOPYiuUHbpluw-aCq80YqHl7-C82O68/view?usp=sharing"
                         }
                 ],
-                "Display": true
+                "Display": false
         },
         {
                 "Lab": {
                         "name": "Lab 8",
                         "link": "https://hackmd.io/@cs111/lab08-fall2021"
-		},
+                },
                 "Week": "8",
                 "Additional Materials": [{
                                 "name": "Lab 8 Presentation",
@@ -131,7 +131,7 @@
                                 "link": "https://drive.google.com/file/d/1y5CWAD0NqnlH8_c_lWyCt288vpL1noHf/view?usp=sharing"
                         }
                 ],
-                "Display": true
+                "Display": false
         },
         {
                 "Lab": {
@@ -149,7 +149,7 @@
                                 "link": "https://drive.google.com/file/d/1VW2IrLlJvo_3CaVqD7vIOgKgdqckSHTJ/view?usp=sharing"
                         }
                 ],
-                "Display": true
+                "Display": false
         },
                 {
                 "Lab": {
@@ -167,7 +167,7 @@
                                 "link": "https://drive.google.com/file/d/1zf4qgvyqnNtfrHzchB5cAa7jMX39Pps4/view?usp=sharing"
                         }
                 ],
-                "Display": true
+                "Display": false
         },
                 {
                 "Lab": {
@@ -184,11 +184,11 @@
                                 "name": "Lab 11 Solution Task 1",
                                 "link": "https://drive.google.com/file/d/1D--jWNuTf7I4y8qntcUMBnPtivTav2v1/view?usp=sharing"
                         },
-			{
-				"name": "Lab 11 Solution Task 2",
-				"link": "https://drive.google.com/file/d/1AMx6H-QVigYzgDY2utdnuzJf-ZBujnHo/view?usp=sharing"
-			}
+                        {
+                                "name": "Lab 11 Solution Task 2",
+                                "link": "https://drive.google.com/file/d/1AMx6H-QVigYzgDY2utdnuzJf-ZBujnHo/view?usp=sharing"
+                        }
                 ],
-                "Display": true
+                "Display": false
         }
 ]

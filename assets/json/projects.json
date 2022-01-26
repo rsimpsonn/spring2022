@@ -5,7 +5,7 @@
 	"In": "Tues, 10/19/21 @ 9pm ET",
 	"Support Docs": [],
 	"Forms": [],
-	"Display": true
+	"Display": false
     },
     {
 	"Assignment": {"name": "Project 2", "link": "https://hackmd.io/@cs111/B1Dr_8KBH"},
@@ -13,7 +13,7 @@
 	"In": "Tues, 11/9/21 @ 9pm ET",
 	"Support Docs": {"name": "Project 2 Partner Form", "link": "https://forms.gle/cTA8xB3TvvnqrGmk6"},
 	"Forms": [],
-	"Display": true
+	"Display": false
     },
     {
 	"Assignment": {"name": "Mini Project", "link": "https://hackmd.io/@cs111/project-mini-f21"},
@@ -21,6 +21,6 @@
 	"In": "Fri, 12/10/21 @ 9pm ET",
 	"Support Docs": [],
 	"Forms": [],
-	"Display": true
+	"Display": false
     }
 ]
