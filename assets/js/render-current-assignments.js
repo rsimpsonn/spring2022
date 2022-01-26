@@ -12,7 +12,7 @@ from the top of the project. Then, visit localhost:8000/index.html and view the 
 
 const CURR_DATE = new Date()
 const CURR_TIME = new Date().getTime()
-const MILISECONDS_IN_24_HOURS = 86_400_000
+const MILISECONDS_IN_24_HOURS = 86400000
 const TESTING_RETRIEVAL = false
 const RENDER_CURR_LAB = true
 
@@ -54,18 +54,18 @@ function findCurrAssignment(allAssignments) {
 
 function renderCurrAssignment(domElementId, filepath) {
     retrieveJson(filepath)
-    .then(data => {
-        currentAssignment = data[0]
-        if (!TESTING_RETRIEVAL) {
-            currentAssignment = findCurrAssignment(data)
-        }
-        console.log(currentAssignment)
-        if (currentAssignment != null) {
-            renderAssignmentHelper(domElementId, currentAssignment)
-        } else{
-            // Can do something here if there is no assignment in the date range
-        }
-    })
+        .then(data => {
+            currentAssignment = data[0]
+            if (!TESTING_RETRIEVAL) {
+                currentAssignment = findCurrAssignment(data)
+            }
+            console.log(currentAssignment)
+            if (currentAssignment != null) {
+                renderAssignmentHelper(domElementId, currentAssignment)
+            } else {
+                // Can do something here if there is no assignment in the date range
+            }
+        })
 }
 
 // This can be used for assignments, drills, projects; not for labs
@@ -81,7 +81,7 @@ function renderAssignmentHelper(domElementId, currentAssignment) {
     assignmentLink.appendChild(assignmentTitle)
     assignmentDue = document.createElement('p')
     assignmentDue.innerHTML = currentAssignment['In']
-    // assignmentDue = document.createTextNode("Due " + currentAssignment['In'])
+        // assignmentDue = document.createTextNode("Due " + currentAssignment['In'])
     assignmentDiv.appendChild(assignmentLink)
     assignmentDiv.appendChild(assignmentDue)
 }
@@ -89,19 +89,19 @@ function renderAssignmentHelper(domElementId, currentAssignment) {
 function renderMostRecentLab() {
     const labJsonUrl = '/assets/json/labs.json'
     retrieveJson(labJsonUrl)
-    .then(labs => {
-        displayedOnly = labs.filter((lab) => lab["Display"])
-        lastDisplayed = displayedOnly[displayedOnly.length - 1]
-        labDiv = document.getElementById('current-lab')
-        labDiv.innerHTML = ''
-        labLink = document.createElement('a')
-        labLink.href = lastDisplayed["Lab"]["link"]
-        labLink.target = "_blank"
-        labTitle = document.createElement('strong')
-        labTitle.innerHTML = lastDisplayed["Lab"]["name"]
-        labLink.appendChild(labTitle)
-        labDiv.appendChild(labLink)
-    })
+        .then(labs => {
+            displayedOnly = labs.filter((lab) => lab["Display"])
+            lastDisplayed = displayedOnly[displayedOnly.length - 1]
+            labDiv = document.getElementById('current-lab')
+            labDiv.innerHTML = ''
+            labLink = document.createElement('a')
+            labLink.href = lastDisplayed["Lab"]["link"]
+            labLink.target = "_blank"
+            labTitle = document.createElement('strong')
+            labTitle.innerHTML = lastDisplayed["Lab"]["name"]
+            labLink.appendChild(labTitle)
+            labDiv.appendChild(labLink)
+        })
 }
 
 async function renderAssignments() {
@@ -114,4 +114,3 @@ async function renderAssignments() {
 }
 
 renderAssignments()
-

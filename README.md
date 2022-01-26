@@ -9,4 +9,5 @@ If you would like the homepage javascript to be functional (i.e. able to retriev
 
 ## TODO / BUGS
 * Update staff photos
+* Update staff page description
 * (Optional) Add ability to drag windows
