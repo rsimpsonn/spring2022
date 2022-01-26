@@ -42,7 +42,7 @@ function findCurrAssignment(allAssignments) {
     const withinDateRangeAndDisplayed = allAssignments.filter((assignment) => {
         outTime = cleanDate(assignment["Out"], false).getTime()
         inTime = cleanDate(assignment["In"], true).getTime()
-        return (outTime - CURR_TIME >= 0) && (inTime - CURR_TIME <= 0) && assignment["Display"]
+        return (CURR_TIME - outTime >= 0) && (inTime - CURR_TIME >= 0) && assignment["Display"]
     })
     if (withinDateRangeAndDisplayed.length == 0) {
         return null
@@ -56,6 +56,7 @@ function renderCurrAssignment(domElementId, filepath) {
     retrieveJson(filepath)
         .then(data => {
             currentAssignment = data[0]
+            console.log(data)
             if (!TESTING_RETRIEVAL) {
                 currentAssignment = findCurrAssignment(data)
             }
@@ -87,7 +88,7 @@ function renderAssignmentHelper(domElementId, currentAssignment) {
 }
 
 function renderMostRecentLab() {
-    const labJsonUrl = '/assets/json/labs.json'
+    const labJsonUrl = 'assets/json/labs.json'
     retrieveJson(labJsonUrl)
         .then(labs => {
             displayedOnly = labs.filter((lab) => lab["Display"])
@@ -105,9 +106,9 @@ function renderMostRecentLab() {
 }
 
 async function renderAssignments() {
-    renderCurrAssignment('current-homework', '/assets/json/assignments.json')
-    renderCurrAssignment('current-project', '/assets/json/projects.json')
-    renderCurrAssignment('current-drill', '/assets/json/drills.json')
+    renderCurrAssignment('current-homework', 'assets/json/assignments.json')
+    renderCurrAssignment('current-project', 'assets/json/projects.json')
+    renderCurrAssignment('current-drill', 'assets/json/drills.json')
     if (RENDER_CURR_LAB) {
         renderMostRecentLab()
     }
